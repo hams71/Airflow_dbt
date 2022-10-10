@@ -1,0 +1,59 @@
+[2022-10-10 01:04:06,121] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_test manual__2022-10-10T08:02:50.396145+00:00 [queued]>
+[2022-10-10 01:04:06,128] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_test manual__2022-10-10T08:02:50.396145+00:00 [queued]>
+[2022-10-10 01:04:06,129] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-10 01:04:06,129] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-10-10 01:04:06,129] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-10 01:04:06,146] {taskinstance.py:1377} INFO - Executing <Task(DbtTestOperator): dbt_test> on 2022-10-10 08:02:50.396145+00:00
+[2022-10-10 01:04:06,150] {standard_task_runner.py:52} INFO - Started process 168172 to run task
+[2022-10-10 01:04:06,161] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dbt', 'dbt_test', 'manual__2022-10-10T08:02:50.396145+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/dbt_airflow.py', '--cfg-path', '/tmp/tmpmix071gj', '--error-file', '/tmp/tmpo2an3dvy']
+[2022-10-10 01:04:06,166] {standard_task_runner.py:80} INFO - Job 24: Subtask dbt_test
+[2022-10-10 01:04:06,241] {task_command.py:370} INFO - Running <TaskInstance: dbt.dbt_test manual__2022-10-10T08:02:50.396145+00:00 [running]> on host ubuntu
+[2022-10-10 01:04:06,310] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dbt
+AIRFLOW_CTX_TASK_ID=dbt_test
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-10T08:02:50.396145+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-10-10T08:02:50.396145+00:00
+[2022-10-10 01:04:06,311] {dbt_hook.py:117} INFO - dbt test
+[2022-10-10 01:04:06,321] {dbt_hook.py:126} INFO - Output:
+[2022-10-10 01:04:09,458] {dbt_hook.py:130} INFO - 08:04:09  Running with dbt=1.1.0
+[2022-10-10 01:04:09,620] {dbt_hook.py:130} INFO - 08:04:09  Found 6 models, 5 tests, 7 snapshots, 0 analyses, 400 macros, 0 operations, 7 seed files, 2 sources, 0 exposures, 0 metrics
+[2022-10-10 01:04:09,623] {dbt_hook.py:130} INFO - 08:04:09
+[2022-10-10 01:04:11,414] {dbt_hook.py:130} INFO - 08:04:11  Concurrency: 2 threads (target='dev')
+[2022-10-10 01:04:11,414] {dbt_hook.py:130} INFO - 08:04:11
+[2022-10-10 01:04:11,422] {dbt_hook.py:130} INFO - 08:04:11  1 of 5 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[2022-10-10 01:04:11,424] {dbt_hook.py:130} INFO - 08:04:11  2 of 5 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[2022-10-10 01:04:13,081] {dbt_hook.py:130} INFO - 08:04:13  1 of 5 PASS not_null_my_first_dbt_model_id ..................................... [[32mPASS[0m in 1.66s]
+[2022-10-10 01:04:13,083] {dbt_hook.py:130} INFO - 08:04:13  3 of 5 START test unique_STG_Accounts_Account_Id ............................... [RUN]
+[2022-10-10 01:04:13,123] {dbt_hook.py:130} INFO - 08:04:13  2 of 5 PASS not_null_my_second_dbt_model_id .................................... [[32mPASS[0m in 1.70s]
+[2022-10-10 01:04:13,124] {dbt_hook.py:130} INFO - 08:04:13  4 of 5 START test unique_my_first_dbt_model_id ................................. [RUN]
+[2022-10-10 01:04:14,553] {dbt_hook.py:130} INFO - 08:04:14  3 of 5 FAIL 252 unique_STG_Accounts_Account_Id ................................. [[31mFAIL 252[0m in 1.47s]
+[2022-10-10 01:04:14,554] {dbt_hook.py:130} INFO - 08:04:14  5 of 5 START test unique_my_second_dbt_model_id ................................ [RUN]
+[2022-10-10 01:04:14,932] {dbt_hook.py:130} INFO - 08:04:14  4 of 5 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 1.81s]
+[2022-10-10 01:04:16,324] {dbt_hook.py:130} INFO - 08:04:16  5 of 5 PASS unique_my_second_dbt_model_id ...................................... [[32mPASS[0m in 1.77s]
+[2022-10-10 01:04:16,328] {dbt_hook.py:130} INFO - 08:04:16
+[2022-10-10 01:04:16,329] {dbt_hook.py:130} INFO - 08:04:16  Finished running 5 tests in 6.71s.
+[2022-10-10 01:04:16,394] {dbt_hook.py:130} INFO - 08:04:16
+[2022-10-10 01:04:16,394] {dbt_hook.py:130} INFO - 08:04:16  [31mCompleted with 1 error and 0 warnings:[0m
+[2022-10-10 01:04:16,395] {dbt_hook.py:130} INFO - 08:04:16
+[2022-10-10 01:04:16,395] {dbt_hook.py:130} INFO - 08:04:16  [31mFailure in test unique_STG_Accounts_Account_Id (seeds/properties.yml)[0m
+[2022-10-10 01:04:16,395] {dbt_hook.py:130} INFO - 08:04:16    Got 252 results, configured to fail if != 0
+[2022-10-10 01:04:16,396] {dbt_hook.py:130} INFO - 08:04:16
+[2022-10-10 01:04:16,396] {dbt_hook.py:130} INFO - 08:04:16    compiled SQL at target/compiled/dbt_project/seeds/properties.yml/unique_STG_Accounts_Account_Id.sql
+[2022-10-10 01:04:16,396] {dbt_hook.py:130} INFO - 08:04:16
+[2022-10-10 01:04:16,397] {dbt_hook.py:130} INFO - 08:04:16  Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+[2022-10-10 01:04:17,843] {dbt_hook.py:132} INFO - Command exited with return code 1
+[2022-10-10 01:04:17,853] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py", line 107, in execute
+    self.create_hook().run_cli('test')
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py", line 138, in run_cli
+    raise AirflowException("dbt command failed")
+airflow.exceptions.AirflowException: dbt command failed
+[2022-10-10 01:04:17,858] {taskinstance.py:1395} INFO - Marking task as FAILED. dag_id=dbt, task_id=dbt_test, execution_date=20221010T080250, start_date=20221010T080406, end_date=20221010T080417
+[2022-10-10 01:04:17,869] {standard_task_runner.py:92} ERROR - Failed to execute job 24 for task dbt_test (dbt command failed; 168172)
+[2022-10-10 01:04:17,895] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-10-10 01:04:17,905] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

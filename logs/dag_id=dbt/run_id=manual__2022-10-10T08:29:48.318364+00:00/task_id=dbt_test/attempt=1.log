@@ -1,0 +1,79 @@
+[2022-10-10 01:31:15,760] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_test manual__2022-10-10T08:29:48.318364+00:00 [queued]>
+[2022-10-10 01:31:15,765] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_test manual__2022-10-10T08:29:48.318364+00:00 [queued]>
+[2022-10-10 01:31:15,765] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-10 01:31:15,765] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-10-10 01:31:15,765] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-10 01:31:15,778] {taskinstance.py:1377} INFO - Executing <Task(DbtTestOperator): dbt_test> on 2022-10-10 08:29:48.318364+00:00
+[2022-10-10 01:31:15,781] {standard_task_runner.py:52} INFO - Started process 173437 to run task
+[2022-10-10 01:31:15,785] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dbt', 'dbt_test', 'manual__2022-10-10T08:29:48.318364+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/dbt_airflow.py', '--cfg-path', '/tmp/tmp286comuw', '--error-file', '/tmp/tmpngmfb4c7']
+[2022-10-10 01:31:15,786] {standard_task_runner.py:80} INFO - Job 36: Subtask dbt_test
+[2022-10-10 01:31:15,827] {task_command.py:370} INFO - Running <TaskInstance: dbt.dbt_test manual__2022-10-10T08:29:48.318364+00:00 [running]> on host ubuntu
+[2022-10-10 01:31:15,886] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dbt
+AIRFLOW_CTX_TASK_ID=dbt_test
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-10T08:29:48.318364+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-10-10T08:29:48.318364+00:00
+[2022-10-10 01:31:15,887] {dbt_hook.py:117} INFO - dbt test
+[2022-10-10 01:31:15,893] {dbt_hook.py:126} INFO - Output:
+[2022-10-10 01:31:18,675] {dbt_hook.py:130} INFO - 08:31:18  Running with dbt=1.1.0
+[2022-10-10 01:31:18,754] {dbt_hook.py:130} INFO - 08:31:18  Found 6 models, 5 tests, 6 snapshots, 0 analyses, 400 macros, 0 operations, 7 seed files, 2 sources, 0 exposures, 0 metrics
+[2022-10-10 01:31:18,757] {dbt_hook.py:130} INFO - 08:31:18
+[2022-10-10 01:31:21,222] {dbt_hook.py:130} INFO - 08:31:21  Concurrency: 2 threads (target='dev')
+[2022-10-10 01:31:21,222] {dbt_hook.py:130} INFO - 08:31:21
+[2022-10-10 01:31:21,227] {dbt_hook.py:130} INFO - 08:31:21  1 of 5 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[2022-10-10 01:31:21,235] {dbt_hook.py:130} INFO - 08:31:21  2 of 5 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[2022-10-10 01:31:22,977] {dbt_hook.py:130} INFO - 08:31:22  1 of 5 ERROR not_null_my_first_dbt_model_id .................................... [[31mERROR[0m in 1.75s]
+[2022-10-10 01:31:22,978] {dbt_hook.py:130} INFO - 08:31:22  3 of 5 START test unique_STG_Accounts_Account_Id ............................... [RUN]
+[2022-10-10 01:31:23,178] {dbt_hook.py:130} INFO - 08:31:23  2 of 5 ERROR not_null_my_second_dbt_model_id ................................... [[31mERROR[0m in 1.94s]
+[2022-10-10 01:31:23,180] {dbt_hook.py:130} INFO - 08:31:23  4 of 5 START test unique_my_first_dbt_model_id ................................. [RUN]
+[2022-10-10 01:31:24,924] {dbt_hook.py:130} INFO - 08:31:24  4 of 5 ERROR unique_my_first_dbt_model_id ...................................... [[31mERROR[0m in 1.74s]
+[2022-10-10 01:31:24,925] {dbt_hook.py:130} INFO - 08:31:24  5 of 5 START test unique_my_second_dbt_model_id ................................ [RUN]
+[2022-10-10 01:31:25,167] {dbt_hook.py:130} INFO - 08:31:25  3 of 5 FAIL 252 unique_STG_Accounts_Account_Id ................................. [[31mFAIL 252[0m in 2.19s]
+[2022-10-10 01:31:26,597] {dbt_hook.py:130} INFO - 08:31:26  5 of 5 ERROR unique_my_second_dbt_model_id ..................................... [[31mERROR[0m in 1.67s]
+[2022-10-10 01:31:26,600] {dbt_hook.py:130} INFO - 08:31:26
+[2022-10-10 01:31:26,600] {dbt_hook.py:130} INFO - 08:31:26  Finished running 5 tests in 7.84s.
+[2022-10-10 01:31:26,658] {dbt_hook.py:130} INFO - 08:31:26
+[2022-10-10 01:31:26,658] {dbt_hook.py:130} INFO - 08:31:26  [31mCompleted with 5 errors and 0 warnings:[0m
+[2022-10-10 01:31:26,659] {dbt_hook.py:130} INFO - 08:31:26
+[2022-10-10 01:31:26,659] {dbt_hook.py:130} INFO - 08:31:26  [33mDatabase Error in test not_null_my_first_dbt_model_id (models/example/schema.yml)[0m
+[2022-10-10 01:31:26,659] {dbt_hook.py:130} INFO - 08:31:26    002003 (42S02): SQL compilation error:
+[2022-10-10 01:31:26,659] {dbt_hook.py:130} INFO - 08:31:26    Object 'STAGING.DBT_HAMS71.MY_FIRST_DBT_MODEL' does not exist or not authorized.
+[2022-10-10 01:31:26,660] {dbt_hook.py:130} INFO - 08:31:26    compiled SQL at target/run/dbt_project/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[2022-10-10 01:31:26,660] {dbt_hook.py:130} INFO - 08:31:26
+[2022-10-10 01:31:26,661] {dbt_hook.py:130} INFO - 08:31:26  [33mDatabase Error in test not_null_my_second_dbt_model_id (models/example/schema.yml)[0m
+[2022-10-10 01:31:26,661] {dbt_hook.py:130} INFO - 08:31:26    002003 (42S02): SQL compilation error:
+[2022-10-10 01:31:26,661] {dbt_hook.py:130} INFO - 08:31:26    Object 'STAGING.DBT_HAMS71.MY_SECOND_DBT_MODEL' does not exist or not authorized.
+[2022-10-10 01:31:26,661] {dbt_hook.py:130} INFO - 08:31:26    compiled SQL at target/run/dbt_project/models/example/schema.yml/not_null_my_second_dbt_model_id.sql
+[2022-10-10 01:31:26,662] {dbt_hook.py:130} INFO - 08:31:26
+[2022-10-10 01:31:26,662] {dbt_hook.py:130} INFO - 08:31:26  [33mDatabase Error in test unique_my_first_dbt_model_id (models/example/schema.yml)[0m
+[2022-10-10 01:31:26,662] {dbt_hook.py:130} INFO - 08:31:26    002003 (42S02): SQL compilation error:
+[2022-10-10 01:31:26,663] {dbt_hook.py:130} INFO - 08:31:26    Object 'STAGING.DBT_HAMS71.MY_FIRST_DBT_MODEL' does not exist or not authorized.
+[2022-10-10 01:31:26,663] {dbt_hook.py:130} INFO - 08:31:26    compiled SQL at target/run/dbt_project/models/example/schema.yml/unique_my_first_dbt_model_id.sql
+[2022-10-10 01:31:26,663] {dbt_hook.py:130} INFO - 08:31:26
+[2022-10-10 01:31:26,663] {dbt_hook.py:130} INFO - 08:31:26  [31mFailure in test unique_STG_Accounts_Account_Id (seeds/properties.yml)[0m
+[2022-10-10 01:31:26,664] {dbt_hook.py:130} INFO - 08:31:26    Got 252 results, configured to fail if != 0
+[2022-10-10 01:31:26,664] {dbt_hook.py:130} INFO - 08:31:26
+[2022-10-10 01:31:26,665] {dbt_hook.py:130} INFO - 08:31:26    compiled SQL at target/compiled/dbt_project/seeds/properties.yml/unique_STG_Accounts_Account_Id.sql
+[2022-10-10 01:31:26,665] {dbt_hook.py:130} INFO - 08:31:26
+[2022-10-10 01:31:26,665] {dbt_hook.py:130} INFO - 08:31:26  [33mDatabase Error in test unique_my_second_dbt_model_id (models/example/schema.yml)[0m
+[2022-10-10 01:31:26,665] {dbt_hook.py:130} INFO - 08:31:26    002003 (42S02): SQL compilation error:
+[2022-10-10 01:31:26,666] {dbt_hook.py:130} INFO - 08:31:26    Object 'STAGING.DBT_HAMS71.MY_SECOND_DBT_MODEL' does not exist or not authorized.
+[2022-10-10 01:31:26,666] {dbt_hook.py:130} INFO - 08:31:26    compiled SQL at target/run/dbt_project/models/example/schema.yml/unique_my_second_dbt_model_id.sql
+[2022-10-10 01:31:26,666] {dbt_hook.py:130} INFO - 08:31:26
+[2022-10-10 01:31:26,667] {dbt_hook.py:130} INFO - 08:31:26  Done. PASS=0 WARN=0 ERROR=5 SKIP=0 TOTAL=5
+[2022-10-10 01:31:28,211] {dbt_hook.py:132} INFO - Command exited with return code 1
+[2022-10-10 01:31:28,220] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py", line 107, in execute
+    self.create_hook().run_cli('test')
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py", line 138, in run_cli
+    raise AirflowException("dbt command failed")
+airflow.exceptions.AirflowException: dbt command failed
+[2022-10-10 01:31:28,223] {taskinstance.py:1395} INFO - Marking task as FAILED. dag_id=dbt, task_id=dbt_test, execution_date=20221010T082948, start_date=20221010T083115, end_date=20221010T083128
+[2022-10-10 01:31:28,237] {standard_task_runner.py:92} ERROR - Failed to execute job 36 for task dbt_test (dbt command failed; 173437)
+[2022-10-10 01:31:28,251] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-10-10 01:31:28,260] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

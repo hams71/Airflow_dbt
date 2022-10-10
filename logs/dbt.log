@@ -1,0 +1,356 @@
+
+
+============================== 2022-10-08 12:44:13.690639 | 779bdfef-7ad5-45fa-a9c1-3caee14a4d24 ==============================
+[0m12:44:13.690665 [info ] [MainThread]: Running with dbt=1.2.2
+[0m12:44:13.692578 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ubuntu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'dbt_project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m12:44:13.693320 [debug] [MainThread]: Tracking: tracking
+[0m12:44:13.713282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff05fae9d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff05fae9c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff05fae9ca0>]}
+[0m12:44:13.714661 [debug] [MainThread]: Starter project path: /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/include/starter_project
+[0m12:44:17.642146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff05fb77e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff05fae9a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff05fae9d00>]}
+[0m12:44:17.643422 [debug] [MainThread]: Flushing usage events
+[0m12:44:19.055412 [error] [MainThread]: Encountered an error:
+deprecated() got an unexpected keyword argument 'name'
+[0m12:44:19.068353 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/main.py", line 129, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/main.py", line 191, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/main.py", line 238, in run_from_args
+    results = task.run()
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/task/init.py", line 326, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/task/init.py", line 198, in create_profile_from_target
+    load_plugin(adapter)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/factory.py", line 207, in load_plugin
+    return FACTORY.load_plugin(name)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/factory.py", line 62, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/snowflake/__init__.py", line 2, in <module>
+    from dbt.adapters.snowflake.connections import SnowflakeConnectionManager  # noqa
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 17, in <module>
+    import snowflake.connector
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/__init__.py", line 16, in <module>
+    from .connection import SnowflakeConnection
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/connection.py", line 24, in <module>
+    from . import errors, proxy
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/errors.py", line 19, in <module>
+    from .telemetry_oob import TelemetryService
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/telemetry_oob.py", line 19, in <module>
+    from .vendored import requests
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/vendored/requests/__init__.py", line 119, in <module>
+    from ..urllib3.contrib import pyopenssl
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/vendored/urllib3/contrib/pyopenssl.py", line 50, in <module>
+    import OpenSSL.SSL
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/OpenSSL/__init__.py", line 8, in <module>
+    from OpenSSL import SSL, crypto
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/OpenSSL/SSL.py", line 19, in <module>
+    from OpenSSL.crypto import (
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/OpenSSL/crypto.py", line 3224, in <module>
+    utils.deprecated(
+TypeError: deprecated() got an unexpected keyword argument 'name'
+
+
+
+============================== 2022-10-08 12:44:31.045323 | be7fa500-cc25-4323-9f7a-cdc48b05ec82 ==============================
+[0m12:44:31.045338 [info ] [MainThread]: Running with dbt=1.2.2
+[0m12:44:31.046011 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ubuntu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m12:44:31.046373 [debug] [MainThread]: Tracking: tracking
+[0m12:44:31.062134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b72f2beb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b72f2be20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b72f2bd30>]}
+[0m12:44:31.063139 [debug] [MainThread]: Executing "git --help"
+[0m12:44:31.071279 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:44:31.072093 [debug] [MainThread]: STDERR: "b''"
+[0m12:44:31.073041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b72f2be20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b72f2bbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b72f2bbe0>]}
+[0m12:44:31.073787 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-08 12:46:14.376252 | c5d71d39-eb6a-4248-8a0b-5373eeec52b4 ==============================
+[0m12:46:14.376265 [info ] [MainThread]: Running with dbt=1.2.2
+[0m12:46:14.376925 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ubuntu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'dbt_project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m12:46:14.377182 [debug] [MainThread]: Tracking: tracking
+[0m12:46:14.400420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17459b1cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17459b1c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17459b1c70>]}
+[0m12:46:14.403761 [info ] [MainThread]: A project called dbt_project already exists here.
+[0m12:46:14.405253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17459b1c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17459b1bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17459b1c70>]}
+[0m12:46:14.406450 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-08 12:46:28.226385 | 3f81fb0e-dbb7-46a2-a279-fca988a9e113 ==============================
+[0m12:46:28.226399 [info ] [MainThread]: Running with dbt=1.2.2
+[0m12:46:28.226924 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ubuntu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'dbt_model', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m12:46:28.227137 [debug] [MainThread]: Tracking: tracking
+[0m12:46:28.241085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf96a8fd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf96a8fc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf96a8fca0>]}
+[0m12:46:28.242338 [debug] [MainThread]: Starter project path: /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/include/starter_project
+[0m12:46:31.458836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf96b1de20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf96a8fa60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf96a8fd00>]}
+[0m12:46:31.460013 [debug] [MainThread]: Flushing usage events
+[0m12:46:32.997918 [error] [MainThread]: Encountered an error:
+deprecated() got an unexpected keyword argument 'name'
+[0m12:46:33.013715 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/main.py", line 129, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/main.py", line 191, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/main.py", line 238, in run_from_args
+    results = task.run()
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/task/init.py", line 326, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/task/init.py", line 198, in create_profile_from_target
+    load_plugin(adapter)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/factory.py", line 207, in load_plugin
+    return FACTORY.load_plugin(name)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/factory.py", line 62, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/snowflake/__init__.py", line 2, in <module>
+    from dbt.adapters.snowflake.connections import SnowflakeConnectionManager  # noqa
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 17, in <module>
+    import snowflake.connector
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/__init__.py", line 16, in <module>
+    from .connection import SnowflakeConnection
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/connection.py", line 24, in <module>
+    from . import errors, proxy
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/errors.py", line 19, in <module>
+    from .telemetry_oob import TelemetryService
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/telemetry_oob.py", line 19, in <module>
+    from .vendored import requests
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/vendored/requests/__init__.py", line 119, in <module>
+    from ..urllib3.contrib import pyopenssl
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/vendored/urllib3/contrib/pyopenssl.py", line 50, in <module>
+    import OpenSSL.SSL
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/OpenSSL/__init__.py", line 8, in <module>
+    from OpenSSL import SSL, crypto
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/OpenSSL/SSL.py", line 19, in <module>
+    from OpenSSL.crypto import (
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/OpenSSL/crypto.py", line 3224, in <module>
+    utils.deprecated(
+TypeError: deprecated() got an unexpected keyword argument 'name'
+
+
+
+============================== 2022-10-08 12:57:55.253488 | 66fb6033-cc6c-45f2-ae7f-8f21e60e0204 ==============================
+[0m12:57:55.253506 [info ] [MainThread]: Running with dbt=1.2.2
+[0m12:57:55.254385 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ubuntu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m12:57:55.254769 [debug] [MainThread]: Tracking: tracking
+[0m12:57:55.274536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf68786e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf68786df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf68786d00>]}
+[0m12:57:55.275565 [debug] [MainThread]: Executing "git --help"
+[0m12:57:55.290294 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:57:55.291232 [debug] [MainThread]: STDERR: "b''"
+[0m12:57:55.292200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf68786df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf68786b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf68786bb0>]}
+[0m12:57:55.293160 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-08 12:58:41.620676 | bfdc939f-10a1-402a-b3e6-eb950e069666 ==============================
+[0m12:58:41.620716 [info ] [MainThread]: Running with dbt=1.2.2
+[0m12:58:41.622249 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ubuntu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m12:58:41.622697 [debug] [MainThread]: Tracking: tracking
+[0m12:58:41.665130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb732690d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb732693d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb732692b0>]}
+[0m12:58:42.034661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb7324f250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb7324fca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb7324f4f0>]}
+[0m12:58:42.035558 [debug] [MainThread]: Flushing usage events
+[0m12:58:43.433578 [error] [MainThread]: Encountered an error:
+deprecated() got an unexpected keyword argument 'name'
+[0m12:58:43.448178 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/main.py", line 129, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/main.py", line 191, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/main.py", line 238, in run_from_args
+    results = task.run()
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/task/debug.py", line 113, in run
+    self.test_configuration()
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/task/debug.py", line 285, in test_configuration
+    profile_status = self._load_profile()
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/task/debug.py", line 256, in _load_profile
+    profile: Profile = Profile.render_from_args(self.args, renderer, profile_name)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/config/profile.py", line 428, in render_from_args
+    return cls.from_raw_profiles(
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/config/profile.py", line 394, in from_raw_profiles
+    return cls.from_raw_profile_info(
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/config/profile.py", line 348, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/config/profile.py", line 181, in _credentials_from_profile
+    cls = load_plugin(typename)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/factory.py", line 207, in load_plugin
+    return FACTORY.load_plugin(name)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/factory.py", line 62, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/snowflake/__init__.py", line 2, in <module>
+    from dbt.adapters.snowflake.connections import SnowflakeConnectionManager  # noqa
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 17, in <module>
+    import snowflake.connector
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/__init__.py", line 16, in <module>
+    from .connection import SnowflakeConnection
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/connection.py", line 24, in <module>
+    from . import errors, proxy
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/errors.py", line 19, in <module>
+    from .telemetry_oob import TelemetryService
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/telemetry_oob.py", line 19, in <module>
+    from .vendored import requests
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/vendored/requests/__init__.py", line 119, in <module>
+    from ..urllib3.contrib import pyopenssl
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/vendored/urllib3/contrib/pyopenssl.py", line 50, in <module>
+    import OpenSSL.SSL
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/OpenSSL/__init__.py", line 8, in <module>
+    from OpenSSL import SSL, crypto
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/OpenSSL/SSL.py", line 19, in <module>
+    from OpenSSL.crypto import (
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/OpenSSL/crypto.py", line 3224, in <module>
+    utils.deprecated(
+TypeError: deprecated() got an unexpected keyword argument 'name'
+
+
+
+============================== 2022-10-08 13:04:34.372448 | 26912217-5f35-4956-a1a7-68810d9a293b ==============================
+[0m13:04:34.372467 [info ] [MainThread]: Running with dbt=1.2.2
+[0m13:04:34.373403 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ubuntu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m13:04:34.373777 [debug] [MainThread]: Tracking: tracking
+[0m13:04:34.394013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2daa5c040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2daa5c2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2daa5c310>]}
+[0m13:04:34.718839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2daa424f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2daa42ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2daa42550>]}
+[0m13:04:34.719744 [debug] [MainThread]: Flushing usage events
+[0m13:04:36.181723 [error] [MainThread]: Encountered an error:
+deprecated() got an unexpected keyword argument 'name'
+[0m13:04:36.189979 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/main.py", line 129, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/main.py", line 191, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/main.py", line 238, in run_from_args
+    results = task.run()
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/task/debug.py", line 113, in run
+    self.test_configuration()
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/task/debug.py", line 285, in test_configuration
+    profile_status = self._load_profile()
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/task/debug.py", line 256, in _load_profile
+    profile: Profile = Profile.render_from_args(self.args, renderer, profile_name)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/config/profile.py", line 428, in render_from_args
+    return cls.from_raw_profiles(
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/config/profile.py", line 394, in from_raw_profiles
+    return cls.from_raw_profile_info(
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/config/profile.py", line 348, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/config/profile.py", line 181, in _credentials_from_profile
+    cls = load_plugin(typename)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/factory.py", line 207, in load_plugin
+    return FACTORY.load_plugin(name)
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/factory.py", line 62, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/snowflake/__init__.py", line 2, in <module>
+    from dbt.adapters.snowflake.connections import SnowflakeConnectionManager  # noqa
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 17, in <module>
+    import snowflake.connector
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/__init__.py", line 16, in <module>
+    from .connection import SnowflakeConnection
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/connection.py", line 24, in <module>
+    from . import errors, proxy
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/errors.py", line 19, in <module>
+    from .telemetry_oob import TelemetryService
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/telemetry_oob.py", line 19, in <module>
+    from .vendored import requests
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/vendored/requests/__init__.py", line 119, in <module>
+    from ..urllib3.contrib import pyopenssl
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/snowflake/connector/vendored/urllib3/contrib/pyopenssl.py", line 50, in <module>
+    import OpenSSL.SSL
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/OpenSSL/__init__.py", line 8, in <module>
+    from OpenSSL import SSL, crypto
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/OpenSSL/SSL.py", line 19, in <module>
+    from OpenSSL.crypto import (
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/OpenSSL/crypto.py", line 3224, in <module>
+    utils.deprecated(
+TypeError: deprecated() got an unexpected keyword argument 'name'
+
+
+
+============================== 2022-10-08 13:12:15.470518 | 369e4630-48d6-484a-9cd9-8c7da5d0f439 ==============================
+13:12:15.470535 [info ] [MainThread]: Running with dbt=1.1.0
+13:12:15.471633 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ubuntu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'dbt_project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+13:12:15.471982 [debug] [MainThread]: Tracking: tracking
+13:12:15.492042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c41df51f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c41df52b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c41df5430>]}
+13:12:15.492905 [debug] [MainThread]: Starter project path: /home/ubuntu/airflow/dbt_airflow_env/lib/python3.8/site-packages/dbt/include/starter_project
+13:12:50.103195 [info ] [MainThread]: Profile dbt_project written to /home/ubuntu/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+13:12:50.103689 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+13:12:50.104191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c41df57f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c41df56a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c41df55b0>]}
+
+
+============================== 2022-10-08 13:13:26.662722 | d72d8000-e5f4-4ff4-a1b5-c5bd510e0aa6 ==============================
+13:13:26.662731 [info ] [MainThread]: Running with dbt=1.1.0
+13:13:26.663138 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ubuntu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+13:13:26.663287 [debug] [MainThread]: Tracking: tracking
+13:13:26.674650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d2de660d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d2de66190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d2de66310>]}
+13:13:27.060475 [debug] [MainThread]: Executing "git --help"
+13:13:27.067611 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+13:13:27.068229 [debug] [MainThread]: STDERR: "b''"
+13:13:27.068909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d2de66340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d27c74d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d27c74d90>]}
+
+
+============================== 2022-10-08 14:14:14.199647 | 0183b30b-a909-48f2-af4d-42ce26334d8c ==============================
+14:14:14.199656 [info ] [MainThread]: Running with dbt=1.1.0
+14:14:14.200011 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ubuntu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+14:14:14.200158 [debug] [MainThread]: Tracking: tracking
+14:14:14.221798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe8118a130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe8118a1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe8118a1f0>]}
+14:14:14.617877 [debug] [MainThread]: Executing "git --help"
+14:14:14.629159 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+14:14:14.629818 [debug] [MainThread]: STDERR: "b''"
+14:14:14.630553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe8118a7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe7afe6280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe7af79250>]}
+
+
+============================== 2022-10-08 14:39:29.221579 | e71e070b-e124-4fde-8347-a36d1677dbfc ==============================
+14:39:29.221590 [info ] [MainThread]: Running with dbt=1.1.0
+14:39:29.222039 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ubuntu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+14:39:29.222203 [debug] [MainThread]: Tracking: tracking
+14:39:29.241447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25a135f520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25a135f490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25a135f430>]}
+14:39:29.907326 [debug] [MainThread]: Executing "git --help"
+14:39:29.916546 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+14:39:29.918903 [debug] [MainThread]: STDERR: "b''"
+14:39:29.920134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25a136b370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2599d94e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2599d842e0>]}
+
+
+============================== 2022-10-08 14:39:51.274210 | f751c13a-fb16-49b1-80e8-913937a7bfd7 ==============================
+14:39:51.274219 [info ] [MainThread]: Running with dbt=1.1.0
+14:39:51.274580 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ubuntu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'dbt_project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+14:39:51.274808 [debug] [MainThread]: Tracking: tracking
+14:39:51.284410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f73f3fc24c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f73f3fc2400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f73f3fc2370>]}
+14:39:51.285257 [debug] [MainThread]: Starter project path: /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/dbt/include/starter_project
+14:39:57.997372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f73f40466a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f73f401f190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f73f401f520>]}

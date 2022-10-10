@@ -1,0 +1,35 @@
+[2022-10-10 00:46:20,443] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_seed manual__2022-10-10T07:46:11.491674+00:00 [queued]>
+[2022-10-10 00:46:20,467] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_seed manual__2022-10-10T07:46:11.491674+00:00 [queued]>
+[2022-10-10 00:46:20,467] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-10 00:46:20,467] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-10-10 00:46:20,468] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-10 00:46:20,514] {taskinstance.py:1377} INFO - Executing <Task(DbtSeedOperator): dbt_seed> on 2022-10-10 07:46:11.491674+00:00
+[2022-10-10 00:46:20,544] {standard_task_runner.py:52} INFO - Started process 163616 to run task
+[2022-10-10 00:46:20,848] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dbt', 'dbt_seed', 'manual__2022-10-10T07:46:11.491674+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/dbt_airflow.py', '--cfg-path', '/tmp/tmpttrorsbg', '--error-file', '/tmp/tmpz1zwo4pq']
+[2022-10-10 00:46:20,856] {standard_task_runner.py:80} INFO - Job 15: Subtask dbt_seed
+[2022-10-10 00:46:22,199] {task_command.py:370} INFO - Running <TaskInstance: dbt.dbt_seed manual__2022-10-10T07:46:11.491674+00:00 [running]> on host ubuntu
+[2022-10-10 00:46:22,669] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dbt
+AIRFLOW_CTX_TASK_ID=dbt_seed
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-10T07:46:11.491674+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-10-10T07:46:11.491674+00:00
+[2022-10-10 00:46:22,720] {dbt_hook.py:117} INFO - dbt seed
+[2022-10-10 00:46:22,752] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py", line 135, in execute
+    self.create_hook().run_cli('seed')
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py", line 119, in run_cli
+    sp = subprocess.Popen(
+  File "/usr/lib/python3.8/subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.8/subprocess.py", line 1704, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/airflow/dbt_project/'
+[2022-10-10 00:46:22,940] {taskinstance.py:1395} INFO - Marking task as FAILED. dag_id=dbt, task_id=dbt_seed, execution_date=20221010T074611, start_date=20221010T074620, end_date=20221010T074622
+[2022-10-10 00:46:23,131] {standard_task_runner.py:92} ERROR - Failed to execute job 15 for task dbt_seed ([Errno 2] No such file or directory: '/airflow/dbt_project/'; 163616)
+[2022-10-10 00:46:23,152] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-10-10 00:46:23,476] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

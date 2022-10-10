@@ -1,0 +1,48 @@
+[2022-10-10 01:30:37,927] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_snapshot manual__2022-10-10T08:29:48.318364+00:00 [queued]>
+[2022-10-10 01:30:37,936] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_snapshot manual__2022-10-10T08:29:48.318364+00:00 [queued]>
+[2022-10-10 01:30:37,936] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-10 01:30:37,936] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-10-10 01:30:37,936] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-10 01:30:37,949] {taskinstance.py:1377} INFO - Executing <Task(DbtSnapshotOperator): dbt_snapshot> on 2022-10-10 08:29:48.318364+00:00
+[2022-10-10 01:30:37,952] {standard_task_runner.py:52} INFO - Started process 173107 to run task
+[2022-10-10 01:30:37,972] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dbt', 'dbt_snapshot', 'manual__2022-10-10T08:29:48.318364+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/dbt_airflow.py', '--cfg-path', '/tmp/tmpbs3whi18', '--error-file', '/tmp/tmphslx2ve8']
+[2022-10-10 01:30:37,973] {standard_task_runner.py:80} INFO - Job 35: Subtask dbt_snapshot
+[2022-10-10 01:30:38,020] {task_command.py:370} INFO - Running <TaskInstance: dbt.dbt_snapshot manual__2022-10-10T08:29:48.318364+00:00 [running]> on host ubuntu
+[2022-10-10 01:30:38,067] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dbt
+AIRFLOW_CTX_TASK_ID=dbt_snapshot
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-10T08:29:48.318364+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-10-10T08:29:48.318364+00:00
+[2022-10-10 01:30:38,068] {dbt_hook.py:117} INFO - dbt snapshot
+[2022-10-10 01:30:38,076] {dbt_hook.py:126} INFO - Output:
+[2022-10-10 01:30:40,963] {dbt_hook.py:130} INFO - 08:30:40  Running with dbt=1.1.0
+[2022-10-10 01:30:41,047] {dbt_hook.py:130} INFO - 08:30:41  Found 6 models, 5 tests, 6 snapshots, 0 analyses, 400 macros, 0 operations, 7 seed files, 2 sources, 0 exposures, 0 metrics
+[2022-10-10 01:30:41,050] {dbt_hook.py:130} INFO - 08:30:41
+[2022-10-10 01:30:54,837] {dbt_hook.py:130} INFO - 08:30:54  Concurrency: 2 threads (target='dev')
+[2022-10-10 01:30:54,837] {dbt_hook.py:130} INFO - 08:30:54
+[2022-10-10 01:30:54,846] {dbt_hook.py:130} INFO - 08:30:54  1 of 6 START snapshot Stage_Schema.Core_Accounts ............................... [RUN]
+[2022-10-10 01:30:54,848] {dbt_hook.py:130} INFO - 08:30:54  2 of 6 START snapshot Stage_Schema.Core_Address ................................ [RUN]
+[2022-10-10 01:31:01,026] {dbt_hook.py:130} INFO - 08:31:01  2 of 6 OK snapshotted Stage_Schema.Core_Address ................................ [[32mSUCCESS 1[0m in 6.18s]
+[2022-10-10 01:31:01,027] {dbt_hook.py:130} INFO - 08:31:01  3 of 6 START snapshot Stage_Schema.Core_Bank ................................... [RUN]
+[2022-10-10 01:31:01,186] {dbt_hook.py:130} INFO - 08:31:01  1 of 6 OK snapshotted Stage_Schema.Core_Accounts ............................... [[32mSUCCESS 1[0m in 6.34s]
+[2022-10-10 01:31:01,188] {dbt_hook.py:130} INFO - 08:31:01  4 of 6 START snapshot Stage_Schema.Core_Branch ................................. [RUN]
+[2022-10-10 01:31:05,357] {dbt_hook.py:130} INFO - 08:31:05  4 of 6 OK snapshotted Stage_Schema.Core_Branch ................................. [[32mSUCCESS 1[0m in 4.17s]
+[2022-10-10 01:31:05,358] {dbt_hook.py:130} INFO - 08:31:05  5 of 6 START snapshot Stage_Schema.Core_Contact ................................ [RUN]
+[2022-10-10 01:31:06,300] {dbt_hook.py:130} INFO - 08:31:06  3 of 6 OK snapshotted Stage_Schema.Core_Bank ................................... [[32mSUCCESS 1[0m in 5.27s]
+[2022-10-10 01:31:08,249] {dbt_hook.py:130} INFO - 08:31:08  5 of 6 OK snapshotted Stage_Schema.Core_Contact ................................ [[32mSUCCESS 1[0m in 2.89s]
+[2022-10-10 01:31:08,251] {dbt_hook.py:130} INFO - 08:31:08  6 of 6 START snapshot Stage_Schema.Core_Contact_Account_Branch ................. [RUN]
+[2022-10-10 01:31:12,426] {dbt_hook.py:130} INFO - 08:31:12  6 of 6 OK snapshotted Stage_Schema.Core_Contact_Account_Branch ................. [[32mSUCCESS 1[0m in 4.17s]
+[2022-10-10 01:31:12,429] {dbt_hook.py:130} INFO - 08:31:12
+[2022-10-10 01:31:12,429] {dbt_hook.py:130} INFO - 08:31:12  Finished running 6 snapshots in 31.38s.
+[2022-10-10 01:31:12,441] {dbt_hook.py:130} INFO - 08:31:12
+[2022-10-10 01:31:12,441] {dbt_hook.py:130} INFO - 08:31:12  [32mCompleted successfully[0m
+[2022-10-10 01:31:12,442] {dbt_hook.py:130} INFO - 08:31:12
+[2022-10-10 01:31:12,443] {dbt_hook.py:130} INFO - 08:31:12  Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[2022-10-10 01:31:14,007] {dbt_hook.py:132} INFO - Command exited with return code 0
+[2022-10-10 01:31:14,017] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=dbt, task_id=dbt_snapshot, execution_date=20221010T082948, start_date=20221010T083037, end_date=20221010T083114
+[2022-10-10 01:31:14,066] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-10-10 01:31:14,082] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
