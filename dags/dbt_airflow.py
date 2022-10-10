@@ -28,10 +28,10 @@ with DAG(dag_id='dbt', default_args=default_args, schedule_interval='@daily') as
     full_refresh=True
   )
 
-  dbt_test = DbtTestOperator(
-    task_id='dbt_test',
-    retries=0,  # Failing tests would fail the task, and we don't want Airflow to try again
-  )
+  # dbt_test = DbtTestOperator(
+  #   task_id='dbt_test',
+  #   retries=0,  # Failing tests would fail the task, and we don't want Airflow to try again
+  # )
 
 
-  dbt_seed >> dbt_run >> dbt_snapshot >> dbt_test 
+  dbt_seed >> dbt_run >> dbt_snapshot
