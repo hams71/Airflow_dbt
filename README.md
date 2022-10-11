@@ -345,3 +345,4 @@ dbt_model:
 - Dbt
 - Snowflake
 - Git
+- Airflow
