@@ -1,5 +1,6 @@
 # Airflow_dbt
 
+Using Airflow as an orchestrator and using dbt for transformations.
 
 ### Table of Contents
 
@@ -19,7 +20,7 @@
 
 ### Overview
 
-- The purpose of doing this was to learn how the **Tranformations** step can be made easy using data build tool (dbt).
+- The purpose of doing this was to learn how the **Tranformations** step can be made easy using data build tool (dbt) and to use airflow to orchestrate.
 - Check what different functionalities does dbt support that can save development time.
 - Snowflake was used as a warehouse. Free 30 day trail when you sign up.
 
@@ -321,7 +322,8 @@ dbt_model:
 ### Level Up
   
 - Right now just loading data to Core/Dim.
-- Create a pipeline and orchectrate it using Airflow or Airbyte.
+- We are using the dbt Operators as is, we can also use DbtParser to get each of the model and airflow will display those as well. Providing us more info about how many models we have.
+- Generating data and placing it in the seeds folder and based on that triggering the dag.
 - Make Fact Table and visualizations on top of that.
 - Use dbt test for testing purpose and different packages that can aid in development.
 
