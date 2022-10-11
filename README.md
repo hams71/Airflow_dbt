@@ -4,6 +4,7 @@
 ### Table of Contents
 
 - [Overview](#overview)
+- [Airflow](#airflow)
 - [Data Build Tool](#data-build-tool)
 - [Folder Structure](#folder-structure)
 - [Program Flow](#program-flow)
@@ -25,6 +26,96 @@
 
 ---
 
+### Airflow
+
+- Apache Airflow is an open-source platform for developing, scheduling, and monitoring batch-oriented workflows.
+- Airflow’s extensible Python framework enables you to build workflows connecting with virtually any technology.
+- A web interface helps manage the state of your workflows.
+- Follow these steps to execute dbt jobs using dbt.
+
+#### Airflow Installation
+- Python, git should be installed.
+
+- This will create a virtual env
+```bash
+  python3 -m venv airflow_env
+```
+
+- Activate the env
+  - Remember to be in the correct folder. 
+```bash
+  source airflow_env/bin/activate
+```
+
+- Update and install some packages
+```bash
+  sudo apt-get update
+```
+```bash
+  sudo apt-add-repository universe
+```
+```bash
+  sudo apt-get update
+```
+```bash
+  sudo apt-get install python-setuptools
+```
+```bash
+  sudo apt install python3-pip
+```
+```bash
+  sudo apt-get install libmysqlclient-dev
+```
+```bash
+  sudo apt-get install libssl-dev
+```
+
+- If you some other folder name do change its name.
+```bash
+  export AIRFLOW_HOME=~/<airflow-folder-name>
+```
+- Install airflow
+```bash
+  pip3 install apache-airflow
+```
+```bash
+  pip3 install typing_extensions
+```
+- Initialize the airflow database
+```bash
+  airflow db init
+```
+- In case you face some issue with the above command use the following command
+``bash
+  airflow db reset
+```
+
+- Create user and will prompt for password that will be used in the UI.
+```bash
+  airflow users create --username admin --firstname admin --lastname testing --role Admin --email admin@domain.com
+```
+
+- Start the scheduler and webserver
+```bash
+  airflow scheduler
+```
+```bash
+  airflow webserver
+```
+
+- I had created a DAG by the name of dbt.
+<p align="center">
+  <img src="Images/airflow-dag.JPG" width="850" >
+</p>
+
+
+<p align="center">
+  <img src="Images/airflow-dag-run.JPG" width="850" >
+</p>
+
+
+---
+
 ### Data Build Tool
 
 - dbt enables analytics engineers to transform data in their warehouses by simply writing **select statements**.
@@ -39,6 +130,7 @@
 
 #### dbt Installation
 
+- Follow these steps if you only want to execute using dbt.
 - Install git and python. 
 - dbt installation on Linux has some problem and due to that we need install the dbt-core project.
 - Will be doing this all in a virtual environment.
@@ -217,6 +309,7 @@ dbt_model:
 - [dbt profile setup](https://docs.getdbt.com/reference/dbt_project.yml)
 - [dbt Youtube Playlist](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT)
 - [Snowflake Youtube Playlist](https://www.youtube.com/playlist?list=PLy4OcwImJzBIX77cmNYiXIJ3tBhpNSUKI)
+- [Airflow Documentation](https://airflow.apache.org/docs/apache-airflow/stable/index.html)
 - Thanks to Kahan Data Solutions for the demo videos.
   
 ---
