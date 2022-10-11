@@ -204,7 +204,7 @@ dbt_model:
 
 
 ### Folder Structure
-- dags &emsp;&emsp;&emsp; - Write dag code here.    
+- dags &emsp;&emsp;&emsp; - Write/Paste dag code here.    
 - dbt_project &emsp;&nbsp;- python virtual env related
   - analyses
   - macros &emsp;&emsp;&emsp;&emsp;&emsp; - create macros here and refer later
@@ -256,6 +256,7 @@ dbt_model:
 #### Alternate way to Execute
 
 - If you would like to execute the same using dbt only and not airflow you can flow these steps.
+- Be in the virtual environment and open terminal. 
 
 - Before executing any of the commands remember to be in the correct folder.
 ```bash
