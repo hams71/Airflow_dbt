@@ -81,6 +81,11 @@
 ```bash
   pip3 install typing_extensions
 ```
+- Installing this will allow to use DbtOperators to execute the code else you can use the BashOperator as well. Documentation Attached in documentation section.
+``bash
+  pip install airflow-dbt
+```
+
 - Initialize the airflow database
 ```bash
   airflow db init
@@ -109,9 +114,6 @@
 </p>
 
 
-<p align="center">
-  <img src="Images/airflow-dag-run.JPG" width="850" >
-</p>
 
 
 ---
@@ -130,31 +132,27 @@
 
 #### dbt Installation
 
-- Follow these steps if you only want to execute using dbt.
 - Install git and python. 
 - dbt installation on Linux has some problem and due to that we need install the dbt-core project.
 - Will be doing this all in a virtual environment.
 
-- This will create a virtual env
-```bash
-  python3 -m venv dbt-env
-```
-
 - Activate the env
   - Remember to be in the correct folder. 
 ```bash
-  source dbt-env/bin/activate
-```
-- In this repo dbt-core has already been download but you can clone it as well.
-```bash
-  git clone https://github.com/dbt-labs/dbt.git
+  source airflow_env/bin/activate
 ```
 
-- Go into the dbt folder and install dbt.
-- In the requirements.txt you can specify what to download e.g. snowflake, big-query.
+- Some dependency
 ```bash
-  cd dbt
-  pip install -r requirements.txt
+  pip install pyOpenSSL==22.0.0
+```
+- Install Dbt 
+```bash
+  pip install dbt-core==1.1.0
+```
+- Install DB/DWH of your choice using Snowflake here.
+```bash
+  pip install dbt-snowflake==1.1.0
 ```
 
 - Command to verify dbt installed.
@@ -206,18 +204,16 @@ dbt_model:
 
 
 ### Folder Structure
-- dbt &emsp;&emsp;&emsp; - dbt cloned repo used for installation    
-- dbt-evn &emsp;&nbsp;- python virtual env related
-- dbt-model 
-  - dbt-model &emsp; - after dbt init <name> this is created
-    - analyses
-    - macros &emsp;&emsp;&emsp;&emsp;&emsp; - create macros here and refer later
-    - models &emsp;&emsp;&emsp;&emsp;&emsp; - tables, views, incremental load, merge 
-    - seeds &emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp; - flat files incase want to load to staging tables using dbt
-    - snapshots &emsp;&nbsp;&nbsp;&emsp;&emsp; - SCD tables
-    - tests &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - tests on different models
-    - dbt_project.yml &emsp;&nbsp; - one place to configure all
-    - packages.yml &emsp;&emsp; - dbt has many packages which can be downloaded
+- dags &emsp;&emsp;&emsp; - Write dag code here.    
+- dbt_project &emsp;&nbsp;- python virtual env related
+  - analyses
+  - macros &emsp;&emsp;&emsp;&emsp;&emsp; - create macros here and refer later
+  - models &emsp;&emsp;&emsp;&emsp;&emsp; - tables, views, incremental load, merge 
+  - seeds &emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp; - flat files incase want to load to staging tables using dbt
+  - snapshots &emsp;&nbsp;&nbsp;&emsp;&emsp; - SCD tables
+  - tests &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - tests on different models
+  - dbt_project.yml &emsp;&nbsp; - one place to configure all
+  - packages.yml &emsp;&emsp; - dbt has many packages which can be downloaded
 
 
 ---
@@ -237,7 +233,33 @@ dbt_model:
   
 - Before executing any of the commands remember to be in the correct folder.
 ```bash
-  cd <project-name>
+  cd <airflow-folder>
+```
+
+- Run this so that if you make changes to code it is reflected.
+```bash
+  airflow scheduler
+```
+  
+  
+- Run this so that if you make changes to code it is reflected.
+```bash
+  airflow webserver -p 8080
+```
+- Once the file is in the dags folder you will be able to see it and can trigger it manually or schedule it as you like.
+
+<p align="center">
+  <img src="Images/airflow-dag-run.JPG" width="850" >
+</p>
+ 
+ 
+#### Alternate way to Execute
+
+- If you would like to execute the same using dbt only and not airflow you can flow these steps.
+
+- Before executing any of the commands remember to be in the correct folder.
+```bash
+  cd <dbt-project-name>
 ```
   
 - To load file from seeds folder to Stage Tables in snowflake.
@@ -278,6 +300,7 @@ dbt_model:
 </p>
 
 
+
 ---
 
 ### Data Model
@@ -310,6 +333,7 @@ dbt_model:
 - [dbt Youtube Playlist](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT)
 - [Snowflake Youtube Playlist](https://www.youtube.com/playlist?list=PLy4OcwImJzBIX77cmNYiXIJ3tBhpNSUKI)
 - [Airflow Documentation](https://airflow.apache.org/docs/apache-airflow/stable/index.html)
+- [Airflow with Dbt Operators](https://pypi.org/project/airflow-dbt/)
 - Thanks to Kahan Data Solutions for the demo videos.
   
 ---
