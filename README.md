@@ -109,7 +109,8 @@ Using Airflow as an orchestrator and using dbt for transformations.
   airflow webserver
 ```
 
-- I had created a DAG by the name of dbt.
+- I had created a DAG by the name of dbt and that use the Dbt Operator to run the tasks.
+- The other one is using the BashOperator to orchestrate and execute it.
 <p align="center">
   <img src="Images/airflow-dag.JPG" width="850" >
 </p>
