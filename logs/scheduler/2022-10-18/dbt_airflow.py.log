@@ -790,3 +790,273 @@ In current version, it is optional. The decorator is applied automatically using
 [2022-10-18 11:22:07,966] {logging_mixin.py:115} INFO - [2022-10-18 11:22:07,965] {dag.py:2379} INFO - Sync 1 DAGs
 [2022-10-18 11:22:07,980] {logging_mixin.py:115} INFO - [2022-10-18 11:22:07,980] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
 [2022-10-18 11:22:07,995] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.070 seconds
+[2022-10-18 11:22:42,423] {processor.py:153} INFO - Started process (PID=270605) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:22:42,424] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:22:42,424] {logging_mixin.py:115} INFO - [2022-10-18 11:22:42,424] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:22:42,437] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:22:42,439] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:22:42,440] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:22:42,445] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:22:42,461] {logging_mixin.py:115} INFO - [2022-10-18 11:22:42,461] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:22:42,478] {logging_mixin.py:115} INFO - [2022-10-18 11:22:42,478] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:22:42,493] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.074 seconds
+[2022-10-18 11:23:17,295] {processor.py:153} INFO - Started process (PID=270715) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:23:17,296] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:23:17,296] {logging_mixin.py:115} INFO - [2022-10-18 11:23:17,296] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:23:17,307] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:23:17,309] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:23:17,310] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:23:17,315] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:23:17,330] {logging_mixin.py:115} INFO - [2022-10-18 11:23:17,330] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:23:17,346] {logging_mixin.py:115} INFO - [2022-10-18 11:23:17,346] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:23:17,361] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.071 seconds
+[2022-10-18 11:23:51,025] {processor.py:153} INFO - Started process (PID=270754) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:23:51,026] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:23:51,026] {logging_mixin.py:115} INFO - [2022-10-18 11:23:51,026] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:23:51,038] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:23:51,039] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:23:51,041] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:23:51,046] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:23:51,061] {logging_mixin.py:115} INFO - [2022-10-18 11:23:51,061] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:23:51,075] {logging_mixin.py:115} INFO - [2022-10-18 11:23:51,075] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:23:51,089] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.068 seconds
+[2022-10-18 11:24:28,110] {processor.py:153} INFO - Started process (PID=270793) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:24:28,110] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:24:28,111] {logging_mixin.py:115} INFO - [2022-10-18 11:24:28,111] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:24:28,124] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:24:28,125] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:24:28,127] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:24:28,133] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:24:28,153] {logging_mixin.py:115} INFO - [2022-10-18 11:24:28,153] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:24:28,174] {logging_mixin.py:115} INFO - [2022-10-18 11:24:28,174] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:24:28,185] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.079 seconds
+[2022-10-18 11:25:04,135] {processor.py:153} INFO - Started process (PID=270831) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:25:04,136] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:25:04,137] {logging_mixin.py:115} INFO - [2022-10-18 11:25:04,137] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:25:04,150] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:25:04,152] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:25:04,153] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:25:04,159] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:25:04,177] {logging_mixin.py:115} INFO - [2022-10-18 11:25:04,177] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:25:04,198] {logging_mixin.py:115} INFO - [2022-10-18 11:25:04,198] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:25:04,218] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.087 seconds
+[2022-10-18 11:25:39,097] {processor.py:153} INFO - Started process (PID=270869) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:25:39,098] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:25:39,099] {logging_mixin.py:115} INFO - [2022-10-18 11:25:39,099] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:25:39,111] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:25:39,112] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:25:39,114] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:25:39,118] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:25:39,134] {logging_mixin.py:115} INFO - [2022-10-18 11:25:39,134] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:25:39,150] {logging_mixin.py:115} INFO - [2022-10-18 11:25:39,150] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:25:39,165] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.071 seconds
+[2022-10-18 11:26:09,937] {processor.py:153} INFO - Started process (PID=270910) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:26:09,938] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:26:09,939] {logging_mixin.py:115} INFO - [2022-10-18 11:26:09,939] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:26:09,955] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:26:09,957] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:26:09,958] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:26:09,964] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:26:09,981] {logging_mixin.py:115} INFO - [2022-10-18 11:26:09,981] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:26:09,998] {logging_mixin.py:115} INFO - [2022-10-18 11:26:09,998] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:26:10,008] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.077 seconds
+[2022-10-18 11:26:41,510] {processor.py:153} INFO - Started process (PID=270947) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:26:41,511] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:26:41,512] {logging_mixin.py:115} INFO - [2022-10-18 11:26:41,512] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:26:41,527] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:26:41,529] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:26:41,530] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:26:41,536] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:26:41,552] {logging_mixin.py:115} INFO - [2022-10-18 11:26:41,552] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:26:41,570] {logging_mixin.py:115} INFO - [2022-10-18 11:26:41,570] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:26:41,581] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.075 seconds
+[2022-10-18 11:27:13,014] {processor.py:153} INFO - Started process (PID=270982) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:27:13,015] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:27:13,016] {logging_mixin.py:115} INFO - [2022-10-18 11:27:13,016] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:27:13,029] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:27:13,031] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:27:13,032] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:27:13,039] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:27:13,066] {logging_mixin.py:115} INFO - [2022-10-18 11:27:13,065] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:27:13,091] {logging_mixin.py:115} INFO - [2022-10-18 11:27:13,091] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:27:13,102] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.092 seconds
+[2022-10-18 11:27:44,958] {processor.py:153} INFO - Started process (PID=271043) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:27:44,959] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:27:44,960] {logging_mixin.py:115} INFO - [2022-10-18 11:27:44,960] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:27:44,971] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:27:44,973] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:27:44,974] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:27:44,979] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:27:44,998] {logging_mixin.py:115} INFO - [2022-10-18 11:27:44,997] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:27:45,015] {logging_mixin.py:115} INFO - [2022-10-18 11:27:45,015] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:27:45,027] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.072 seconds
+[2022-10-18 11:28:18,824] {processor.py:153} INFO - Started process (PID=271081) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:28:18,825] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:28:18,826] {logging_mixin.py:115} INFO - [2022-10-18 11:28:18,826] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:28:18,848] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:28:18,850] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:28:18,854] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:28:18,863] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:28:18,895] {logging_mixin.py:115} INFO - [2022-10-18 11:28:18,894] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:28:18,923] {logging_mixin.py:115} INFO - [2022-10-18 11:28:18,923] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:28:18,940] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.122 seconds
+[2022-10-18 11:28:51,299] {processor.py:153} INFO - Started process (PID=271162) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:28:51,301] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:28:51,302] {logging_mixin.py:115} INFO - [2022-10-18 11:28:51,302] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:28:51,317] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:28:51,319] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:28:51,320] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:28:51,326] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:28:51,347] {logging_mixin.py:115} INFO - [2022-10-18 11:28:51,347] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:28:51,369] {logging_mixin.py:115} INFO - [2022-10-18 11:28:51,369] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:28:51,387] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.091 seconds
+[2022-10-18 11:29:26,187] {processor.py:153} INFO - Started process (PID=271216) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:29:26,187] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:29:26,188] {logging_mixin.py:115} INFO - [2022-10-18 11:29:26,188] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:29:26,201] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:29:26,203] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:29:26,205] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:29:26,209] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:29:26,226] {logging_mixin.py:115} INFO - [2022-10-18 11:29:26,225] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:29:26,240] {logging_mixin.py:115} INFO - [2022-10-18 11:29:26,240] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:29:26,253] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.070 seconds
+[2022-10-18 11:29:58,665] {processor.py:153} INFO - Started process (PID=271257) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:29:58,666] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:29:58,666] {logging_mixin.py:115} INFO - [2022-10-18 11:29:58,666] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:29:58,687] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:29:58,690] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:29:58,693] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:29:58,705] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:29:58,730] {logging_mixin.py:115} INFO - [2022-10-18 11:29:58,730] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:29:58,751] {logging_mixin.py:115} INFO - [2022-10-18 11:29:58,751] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:29:58,765] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.105 seconds
+[2022-10-18 11:30:30,820] {processor.py:153} INFO - Started process (PID=271336) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:30:30,822] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-18 11:30:30,822] {logging_mixin.py:115} INFO - [2022-10-18 11:30:30,822] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:30:30,839] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-18 11:30:30,842] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:30:30,845] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-18 11:30:30,858] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-18 11:30:30,882] {logging_mixin.py:115} INFO - [2022-10-18 11:30:30,882] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:30:30,902] {logging_mixin.py:115} INFO - [2022-10-18 11:30:30,902] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:30:30,916] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.101 seconds
