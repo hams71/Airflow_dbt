@@ -83,7 +83,7 @@ Using Airflow as an orchestrator and using dbt for transformations.
   pip3 install typing_extensions
 ```
 - Installing this will allow to use DbtOperators to execute the code else you can use the BashOperator as well. Documentation Attached in documentation section.
-``bash
+```bash
   pip install airflow-dbt
 ```
 
@@ -92,7 +92,7 @@ Using Airflow as an orchestrator and using dbt for transformations.
   airflow db init
 ```
 - In case you face some issue with the above command use the following command
-``bash
+```bash
   airflow db reset
 ```
 
@@ -110,7 +110,7 @@ Using Airflow as an orchestrator and using dbt for transformations.
 ```
 
 - I had created a DAG by the name of dbt and that use the Dbt Operator to run the tasks.
-- The other one is using the BashOperator to orchestrate and execute it.
+- The other one dbt_dag_bash is using the BashOperator to orchestrate and execute it.
 <p align="center">
   <img src="Images/airflow-dag.JPG" width="850" >
 </p>
@@ -206,7 +206,7 @@ dbt_model:
 
 
 ### Folder Structure
-- dags &emsp;&emsp;&emsp; - Write/Paste dag code here.    
+- dags &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; - Write/Paste dag code here.    
 - dbt_project &emsp;&nbsp;- python virtual env related
   - analyses
   - macros &emsp;&emsp;&emsp;&emsp;&emsp; - create macros here and refer later
