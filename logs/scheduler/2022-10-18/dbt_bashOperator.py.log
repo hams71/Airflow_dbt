@@ -1,0 +1,301 @@
+[2022-10-18 00:11:43,698] {processor.py:153} INFO - Started process (PID=265249) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:11:43,698] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 00:11:43,699] {logging_mixin.py:115} INFO - [2022-10-18 00:11:43,699] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:11:43,709] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:11:43,729] {logging_mixin.py:115} INFO - [2022-10-18 00:11:43,729] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 00:11:43,745] {logging_mixin.py:115} INFO - [2022-10-18 00:11:43,745] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 00:11:43,763] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.071 seconds
+[2022-10-18 00:13:10,871] {processor.py:153} INFO - Started process (PID=265919) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:13:10,872] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 00:13:10,872] {logging_mixin.py:115} INFO - [2022-10-18 00:13:10,872] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:13:10,881] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:13:10,900] {logging_mixin.py:115} INFO - [2022-10-18 00:13:10,900] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 00:13:10,916] {logging_mixin.py:115} INFO - [2022-10-18 00:13:10,916] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 00:13:10,929] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.062 seconds
+[2022-10-18 00:13:47,404] {processor.py:153} INFO - Started process (PID=265971) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:13:47,405] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 00:13:47,407] {logging_mixin.py:115} INFO - [2022-10-18 00:13:47,406] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:13:47,417] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:13:47,443] {logging_mixin.py:115} INFO - [2022-10-18 00:13:47,443] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 00:13:47,466] {logging_mixin.py:115} INFO - [2022-10-18 00:13:47,466] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 00:13:47,482] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.084 seconds
+[2022-10-18 00:14:19,267] {processor.py:153} INFO - Started process (PID=266031) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:14:19,268] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 00:14:19,268] {logging_mixin.py:115} INFO - [2022-10-18 00:14:19,268] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:14:19,277] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:14:19,297] {logging_mixin.py:115} INFO - [2022-10-18 00:14:19,297] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 00:14:19,314] {logging_mixin.py:115} INFO - [2022-10-18 00:14:19,314] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 00:14:19,327] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.064 seconds
+[2022-10-18 00:14:50,330] {processor.py:153} INFO - Started process (PID=266076) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:14:50,331] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 00:14:50,332] {logging_mixin.py:115} INFO - [2022-10-18 00:14:50,332] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:14:50,341] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:14:50,361] {logging_mixin.py:115} INFO - [2022-10-18 00:14:50,361] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 00:14:50,381] {logging_mixin.py:115} INFO - [2022-10-18 00:14:50,381] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 00:14:50,395] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.069 seconds
+[2022-10-18 00:15:25,463] {processor.py:153} INFO - Started process (PID=266161) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:15:25,464] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 00:15:25,465] {logging_mixin.py:115} INFO - [2022-10-18 00:15:25,465] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:15:25,475] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:15:25,496] {logging_mixin.py:115} INFO - [2022-10-18 00:15:25,496] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 00:15:25,514] {logging_mixin.py:115} INFO - [2022-10-18 00:15:25,514] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 00:15:25,527] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.069 seconds
+[2022-10-18 00:15:58,014] {processor.py:153} INFO - Started process (PID=266198) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:15:58,015] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 00:15:58,015] {logging_mixin.py:115} INFO - [2022-10-18 00:15:58,015] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:15:58,024] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:15:58,046] {logging_mixin.py:115} INFO - [2022-10-18 00:15:58,046] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 00:15:58,063] {logging_mixin.py:115} INFO - [2022-10-18 00:15:58,063] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 00:15:58,075] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.065 seconds
+[2022-10-18 00:16:28,428] {processor.py:153} INFO - Started process (PID=266228) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:16:28,429] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 00:16:28,430] {logging_mixin.py:115} INFO - [2022-10-18 00:16:28,430] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:16:28,438] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:16:28,459] {logging_mixin.py:115} INFO - [2022-10-18 00:16:28,459] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 00:16:28,476] {logging_mixin.py:115} INFO - [2022-10-18 00:16:28,476] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 00:16:28,488] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.064 seconds
+[2022-10-18 00:16:59,776] {processor.py:153} INFO - Started process (PID=266277) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:16:59,777] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 00:16:59,777] {logging_mixin.py:115} INFO - [2022-10-18 00:16:59,777] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:16:59,786] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:16:59,805] {logging_mixin.py:115} INFO - [2022-10-18 00:16:59,805] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 00:16:59,828] {logging_mixin.py:115} INFO - [2022-10-18 00:16:59,827] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 00:16:59,846] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.075 seconds
+[2022-10-18 00:17:33,740] {processor.py:153} INFO - Started process (PID=266333) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:17:33,741] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 00:17:33,742] {logging_mixin.py:115} INFO - [2022-10-18 00:17:33,742] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:17:33,759] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:17:33,804] {logging_mixin.py:115} INFO - [2022-10-18 00:17:33,804] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 00:17:33,858] {logging_mixin.py:115} INFO - [2022-10-18 00:17:33,858] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 00:17:33,878] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.143 seconds
+[2022-10-18 00:18:08,156] {processor.py:153} INFO - Started process (PID=266404) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:18:08,157] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 00:18:08,158] {logging_mixin.py:115} INFO - [2022-10-18 00:18:08,158] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:18:08,166] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 00:18:08,186] {logging_mixin.py:115} INFO - [2022-10-18 00:18:08,186] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 00:18:08,203] {logging_mixin.py:115} INFO - [2022-10-18 00:18:08,203] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 00:18:08,214] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.062 seconds
+[2022-10-18 11:02:44,546] {processor.py:153} INFO - Started process (PID=266815) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:02:44,551] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:02:44,555] {logging_mixin.py:115} INFO - [2022-10-18 11:02:44,554] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:02:44,608] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:02:44,779] {logging_mixin.py:115} INFO - [2022-10-18 11:02:44,779] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:02:44,835] {logging_mixin.py:115} INFO - [2022-10-18 11:02:44,834] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:02:44,884] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.361 seconds
+[2022-10-18 11:03:17,998] {processor.py:153} INFO - Started process (PID=267418) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:03:17,999] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:03:18,000] {logging_mixin.py:115} INFO - [2022-10-18 11:03:18,000] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:03:18,010] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:03:18,038] {logging_mixin.py:115} INFO - [2022-10-18 11:03:18,038] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:03:18,057] {logging_mixin.py:115} INFO - [2022-10-18 11:03:18,057] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:03:18,070] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.077 seconds
+[2022-10-18 11:03:51,765] {processor.py:153} INFO - Started process (PID=267455) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:03:51,766] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:03:51,766] {logging_mixin.py:115} INFO - [2022-10-18 11:03:51,766] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:03:51,773] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:03:51,789] {logging_mixin.py:115} INFO - [2022-10-18 11:03:51,789] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:03:51,804] {logging_mixin.py:115} INFO - [2022-10-18 11:03:51,804] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:03:51,817] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.055 seconds
+[2022-10-18 11:04:23,774] {processor.py:153} INFO - Started process (PID=267490) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:04:23,775] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:04:23,776] {logging_mixin.py:115} INFO - [2022-10-18 11:04:23,776] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:04:23,785] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:04:23,806] {logging_mixin.py:115} INFO - [2022-10-18 11:04:23,806] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:04:23,823] {logging_mixin.py:115} INFO - [2022-10-18 11:04:23,823] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:04:23,836] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.066 seconds
+[2022-10-18 11:04:58,636] {processor.py:153} INFO - Started process (PID=267530) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:04:58,637] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:04:58,637] {logging_mixin.py:115} INFO - [2022-10-18 11:04:58,637] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:04:58,644] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:04:58,661] {logging_mixin.py:115} INFO - [2022-10-18 11:04:58,661] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:04:58,677] {logging_mixin.py:115} INFO - [2022-10-18 11:04:58,677] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:04:58,688] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.055 seconds
+[2022-10-18 11:05:29,217] {processor.py:153} INFO - Started process (PID=267845) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:05:29,218] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:05:29,218] {logging_mixin.py:115} INFO - [2022-10-18 11:05:29,218] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:05:29,225] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:05:29,243] {logging_mixin.py:115} INFO - [2022-10-18 11:05:29,243] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:05:29,257] {logging_mixin.py:115} INFO - [2022-10-18 11:05:29,257] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:05:29,268] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.054 seconds
+[2022-10-18 11:06:02,526] {processor.py:153} INFO - Started process (PID=267887) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:06:02,527] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:06:02,528] {logging_mixin.py:115} INFO - [2022-10-18 11:06:02,527] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:06:02,534] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:06:02,551] {logging_mixin.py:115} INFO - [2022-10-18 11:06:02,551] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:06:02,565] {logging_mixin.py:115} INFO - [2022-10-18 11:06:02,565] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:06:02,577] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.055 seconds
+[2022-10-18 11:06:33,359] {processor.py:153} INFO - Started process (PID=267924) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:06:33,360] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:06:33,361] {logging_mixin.py:115} INFO - [2022-10-18 11:06:33,361] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:06:33,367] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:06:33,384] {logging_mixin.py:115} INFO - [2022-10-18 11:06:33,384] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:06:33,398] {logging_mixin.py:115} INFO - [2022-10-18 11:06:33,398] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:06:33,413] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.058 seconds
+[2022-10-18 11:07:06,196] {processor.py:153} INFO - Started process (PID=267962) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:07:06,197] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:07:06,198] {logging_mixin.py:115} INFO - [2022-10-18 11:07:06,198] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:07:06,207] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:07:06,235] {logging_mixin.py:115} INFO - [2022-10-18 11:07:06,235] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:07:06,252] {logging_mixin.py:115} INFO - [2022-10-18 11:07:06,252] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:07:06,262] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.073 seconds
+[2022-10-18 11:07:41,248] {processor.py:153} INFO - Started process (PID=268037) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:07:41,249] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:07:41,250] {logging_mixin.py:115} INFO - [2022-10-18 11:07:41,250] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:07:41,257] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:07:41,276] {logging_mixin.py:115} INFO - [2022-10-18 11:07:41,276] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:07:41,290] {logging_mixin.py:115} INFO - [2022-10-18 11:07:41,290] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:07:41,301] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.057 seconds
+[2022-10-18 11:08:12,093] {processor.py:153} INFO - Started process (PID=268070) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:08:12,094] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:08:12,095] {logging_mixin.py:115} INFO - [2022-10-18 11:08:12,095] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:08:12,101] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:08:12,119] {logging_mixin.py:115} INFO - [2022-10-18 11:08:12,119] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:08:12,133] {logging_mixin.py:115} INFO - [2022-10-18 11:08:12,133] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:08:12,143] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.054 seconds
+[2022-10-18 11:08:48,119] {processor.py:153} INFO - Started process (PID=268107) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:08:48,119] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:08:48,120] {logging_mixin.py:115} INFO - [2022-10-18 11:08:48,120] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:08:48,129] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:08:48,150] {logging_mixin.py:115} INFO - [2022-10-18 11:08:48,150] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:08:48,170] {logging_mixin.py:115} INFO - [2022-10-18 11:08:48,170] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:08:48,188] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.073 seconds
+[2022-10-18 11:09:19,080] {processor.py:153} INFO - Started process (PID=268144) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:09:19,081] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:09:19,081] {logging_mixin.py:115} INFO - [2022-10-18 11:09:19,081] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:09:19,088] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:09:19,105] {logging_mixin.py:115} INFO - [2022-10-18 11:09:19,105] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:09:19,119] {logging_mixin.py:115} INFO - [2022-10-18 11:09:19,119] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:09:19,129] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.053 seconds
+[2022-10-18 11:09:54,913] {processor.py:153} INFO - Started process (PID=268180) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:09:54,914] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:09:54,914] {logging_mixin.py:115} INFO - [2022-10-18 11:09:54,914] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:09:54,921] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:09:54,939] {logging_mixin.py:115} INFO - [2022-10-18 11:09:54,939] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:09:54,954] {logging_mixin.py:115} INFO - [2022-10-18 11:09:54,954] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:09:54,965] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.056 seconds
+[2022-10-18 11:10:25,741] {processor.py:153} INFO - Started process (PID=268215) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:10:25,742] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:10:25,742] {logging_mixin.py:115} INFO - [2022-10-18 11:10:25,742] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:10:25,749] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:10:25,771] {logging_mixin.py:115} INFO - [2022-10-18 11:10:25,771] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:10:25,785] {logging_mixin.py:115} INFO - [2022-10-18 11:10:25,785] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:10:25,796] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.059 seconds
+[2022-10-18 11:11:00,319] {processor.py:153} INFO - Started process (PID=268256) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:11:00,320] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:11:00,320] {logging_mixin.py:115} INFO - [2022-10-18 11:11:00,320] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:11:00,328] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:11:00,351] {logging_mixin.py:115} INFO - [2022-10-18 11:11:00,350] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:11:00,369] {logging_mixin.py:115} INFO - [2022-10-18 11:11:00,369] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:11:00,382] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.067 seconds
+[2022-10-18 11:11:30,427] {processor.py:153} INFO - Started process (PID=268295) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:11:30,428] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:11:30,429] {logging_mixin.py:115} INFO - [2022-10-18 11:11:30,429] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:11:30,436] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:11:30,453] {logging_mixin.py:115} INFO - [2022-10-18 11:11:30,452] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:11:30,466] {logging_mixin.py:115} INFO - [2022-10-18 11:11:30,466] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:11:30,480] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.056 seconds
+[2022-10-18 11:12:02,260] {processor.py:153} INFO - Started process (PID=268329) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:12:02,261] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:12:02,262] {logging_mixin.py:115} INFO - [2022-10-18 11:12:02,262] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:12:02,269] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:12:02,286] {logging_mixin.py:115} INFO - [2022-10-18 11:12:02,285] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:12:02,301] {logging_mixin.py:115} INFO - [2022-10-18 11:12:02,301] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:12:02,313] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.056 seconds
+[2022-10-18 11:12:36,065] {processor.py:153} INFO - Started process (PID=268394) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:12:36,066] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:12:36,067] {logging_mixin.py:115} INFO - [2022-10-18 11:12:36,066] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:12:36,073] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:12:36,089] {logging_mixin.py:115} INFO - [2022-10-18 11:12:36,089] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:12:36,103] {logging_mixin.py:115} INFO - [2022-10-18 11:12:36,103] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:12:36,114] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.052 seconds
+[2022-10-18 11:13:06,467] {processor.py:153} INFO - Started process (PID=268427) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:13:06,468] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:13:06,469] {logging_mixin.py:115} INFO - [2022-10-18 11:13:06,469] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:13:06,476] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:13:06,494] {logging_mixin.py:115} INFO - [2022-10-18 11:13:06,494] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:13:06,508] {logging_mixin.py:115} INFO - [2022-10-18 11:13:06,508] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:13:06,521] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.058 seconds
+[2022-10-18 11:13:42,982] {processor.py:153} INFO - Started process (PID=268465) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:13:42,983] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:13:42,984] {logging_mixin.py:115} INFO - [2022-10-18 11:13:42,984] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:13:42,995] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:13:43,029] {logging_mixin.py:115} INFO - [2022-10-18 11:13:43,028] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:13:43,053] {logging_mixin.py:115} INFO - [2022-10-18 11:13:43,053] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:13:43,069] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.093 seconds
+[2022-10-18 11:14:17,521] {processor.py:153} INFO - Started process (PID=268504) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:14:17,522] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:14:17,523] {logging_mixin.py:115} INFO - [2022-10-18 11:14:17,523] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:14:17,530] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:14:17,546] {logging_mixin.py:115} INFO - [2022-10-18 11:14:17,546] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:14:17,562] {logging_mixin.py:115} INFO - [2022-10-18 11:14:17,562] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:14:17,572] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.056 seconds
+[2022-10-18 11:14:51,385] {processor.py:153} INFO - Started process (PID=268541) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:14:51,386] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:14:51,387] {logging_mixin.py:115} INFO - [2022-10-18 11:14:51,387] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:14:51,398] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:14:51,419] {logging_mixin.py:115} INFO - [2022-10-18 11:14:51,419] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:14:51,437] {logging_mixin.py:115} INFO - [2022-10-18 11:14:51,437] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:14:51,451] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.069 seconds
+[2022-10-18 11:15:23,879] {processor.py:153} INFO - Started process (PID=268578) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:15:23,879] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:15:23,880] {logging_mixin.py:115} INFO - [2022-10-18 11:15:23,880] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:15:23,888] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:15:23,907] {logging_mixin.py:115} INFO - [2022-10-18 11:15:23,906] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:15:23,924] {logging_mixin.py:115} INFO - [2022-10-18 11:15:23,923] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:15:23,935] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.060 seconds
+[2022-10-18 11:15:58,599] {processor.py:153} INFO - Started process (PID=268617) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:15:58,600] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:15:58,600] {logging_mixin.py:115} INFO - [2022-10-18 11:15:58,600] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:15:58,609] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:15:58,633] {logging_mixin.py:115} INFO - [2022-10-18 11:15:58,633] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:15:58,653] {logging_mixin.py:115} INFO - [2022-10-18 11:15:58,653] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:15:58,666] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.072 seconds
+[2022-10-18 11:16:34,708] {processor.py:153} INFO - Started process (PID=268660) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:16:34,709] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:16:34,709] {logging_mixin.py:115} INFO - [2022-10-18 11:16:34,709] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:16:34,716] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:16:34,734] {logging_mixin.py:115} INFO - [2022-10-18 11:16:34,734] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:16:34,749] {logging_mixin.py:115} INFO - [2022-10-18 11:16:34,749] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:16:34,765] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.061 seconds
+[2022-10-18 11:17:09,277] {processor.py:153} INFO - Started process (PID=268701) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:17:09,278] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:17:09,279] {logging_mixin.py:115} INFO - [2022-10-18 11:17:09,279] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:17:09,289] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:17:09,314] {logging_mixin.py:115} INFO - [2022-10-18 11:17:09,313] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:17:09,336] {logging_mixin.py:115} INFO - [2022-10-18 11:17:09,336] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:17:09,351] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.081 seconds
+[2022-10-18 11:17:41,707] {processor.py:153} INFO - Started process (PID=268781) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:17:41,708] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:17:41,709] {logging_mixin.py:115} INFO - [2022-10-18 11:17:41,708] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:17:41,717] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:17:41,736] {logging_mixin.py:115} INFO - [2022-10-18 11:17:41,736] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:17:41,754] {logging_mixin.py:115} INFO - [2022-10-18 11:17:41,754] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:17:41,766] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.063 seconds
+[2022-10-18 11:18:16,594] {processor.py:153} INFO - Started process (PID=268827) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:18:16,596] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:18:16,596] {logging_mixin.py:115} INFO - [2022-10-18 11:18:16,596] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:18:16,604] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:18:16,626] {logging_mixin.py:115} INFO - [2022-10-18 11:18:16,625] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:18:16,652] {logging_mixin.py:115} INFO - [2022-10-18 11:18:16,652] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:18:16,674] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.085 seconds
+[2022-10-18 11:18:46,790] {processor.py:153} INFO - Started process (PID=268963) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:18:46,791] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:18:46,791] {logging_mixin.py:115} INFO - [2022-10-18 11:18:46,791] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:18:46,806] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:18:46,823] {logging_mixin.py:115} INFO - [2022-10-18 11:18:46,823] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:18:46,837] {logging_mixin.py:115} INFO - [2022-10-18 11:18:46,837] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:18:46,852] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.065 seconds
+[2022-10-18 11:20:10,231] {processor.py:153} INFO - Started process (PID=269559) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:20:10,231] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:20:10,232] {logging_mixin.py:115} INFO - [2022-10-18 11:20:10,232] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:20:10,241] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:20:10,258] {logging_mixin.py:115} INFO - [2022-10-18 11:20:10,258] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:20:10,276] {logging_mixin.py:115} INFO - [2022-10-18 11:20:10,276] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:20:10,287] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.060 seconds
+[2022-10-18 11:22:07,482] {processor.py:153} INFO - Started process (PID=270495) to work on /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:22:07,483] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_bashOperator.py for tasks to queue
+[2022-10-18 11:22:07,484] {logging_mixin.py:115} INFO - [2022-10-18 11:22:07,484] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:22:07,491] {processor.py:651} INFO - DAG(s) dict_keys(['dbt_dag_bash']) retrieved from /home/ubuntu/airflow/dags/dbt_bashOperator.py
+[2022-10-18 11:22:07,510] {logging_mixin.py:115} INFO - [2022-10-18 11:22:07,510] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-18 11:22:07,523] {logging_mixin.py:115} INFO - [2022-10-18 11:22:07,523] {dag.py:2927} INFO - Setting next_dagrun for dbt_dag_bash to 2022-10-18T00:00:00+00:00, run_after=2022-10-19T00:00:00+00:00
+[2022-10-18 11:22:07,534] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_bashOperator.py took 0.056 seconds

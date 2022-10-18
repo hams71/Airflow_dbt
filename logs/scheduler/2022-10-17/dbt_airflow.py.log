@@ -1,0 +1,18 @@
+[2022-10-17 11:05:16,378] {processor.py:153} INFO - Started process (PID=263495) to work on /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-17 11:05:16,379] {processor.py:641} INFO - Processing file /home/ubuntu/airflow/dags/dbt_airflow.py for tasks to queue
+[2022-10-17 11:05:16,380] {logging_mixin.py:115} INFO - [2022-10-17 11:05:16,379] {dagbag.py:507} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-17 11:05:16,462] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: This module is deprecated. Please use `airflow.hooks.base`.
+[2022-10-17 11:05:16,468] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py:6 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-17 11:05:16,470] {logging_mixin.py:115} WARNING - /home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/__init__.py:1 DeprecationWarning: This decorator is deprecated. 
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-10-17 11:05:16,584] {processor.py:651} INFO - DAG(s) dict_keys(['dbt']) retrieved from /home/ubuntu/airflow/dags/dbt_airflow.py
+[2022-10-17 11:05:16,601] {logging_mixin.py:115} INFO - [2022-10-17 11:05:16,601] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-10-17 11:05:16,618] {logging_mixin.py:115} INFO - [2022-10-17 11:05:16,618] {dag.py:2927} INFO - Setting next_dagrun for dbt to 2022-10-17T00:00:00+00:00, run_after=2022-10-18T00:00:00+00:00
+[2022-10-17 11:05:16,630] {processor.py:161} INFO - Processing /home/ubuntu/airflow/dags/dbt_airflow.py took 0.256 seconds

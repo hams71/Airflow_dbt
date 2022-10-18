@@ -1,0 +1,52 @@
+[2022-10-13 14:15:56,024] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt_dag_bash.dbt_seed manual__2022-10-13T21:15:53.464353+00:00 [queued]>
+[2022-10-13 14:15:56,030] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt_dag_bash.dbt_seed manual__2022-10-13T21:15:53.464353+00:00 [queued]>
+[2022-10-13 14:15:56,030] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-13 14:15:56,030] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-10-13 14:15:56,030] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-13 14:15:56,041] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): dbt_seed> on 2022-10-13 21:15:53.464353+00:00
+[2022-10-13 14:15:56,044] {standard_task_runner.py:52} INFO - Started process 248688 to run task
+[2022-10-13 14:15:56,049] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dbt_dag_bash', 'dbt_seed', 'manual__2022-10-13T21:15:53.464353+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/dbt_bashOperator.py', '--cfg-path', '/tmp/tmp16cltvw4', '--error-file', '/tmp/tmp5qslddrl']
+[2022-10-13 14:15:56,050] {standard_task_runner.py:80} INFO - Job 84: Subtask dbt_seed
+[2022-10-13 14:15:56,095] {task_command.py:370} INFO - Running <TaskInstance: dbt_dag_bash.dbt_seed manual__2022-10-13T21:15:53.464353+00:00 [running]> on host ubuntu
+[2022-10-13 14:15:56,145] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dbt_dag_bash
+AIRFLOW_CTX_TASK_ID=dbt_seed
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-13T21:15:53.464353+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-10-13T21:15:53.464353+00:00
+[2022-10-13 14:15:56,147] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-10-13 14:15:56,147] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'cd /home/ubuntu/airflow/dbt_project/ && dbt seed --full-refresh']
+[2022-10-13 14:15:56,159] {subprocess.py:85} INFO - Output:
+[2022-10-13 14:16:01,412] {subprocess.py:92} INFO - 21:16:01  Running with dbt=1.1.0
+[2022-10-13 14:16:01,639] {subprocess.py:92} INFO - 21:16:01  Found 6 models, 5 tests, 6 snapshots, 0 analyses, 400 macros, 0 operations, 7 seed files, 2 sources, 0 exposures, 0 metrics
+[2022-10-13 14:16:01,643] {subprocess.py:92} INFO - 21:16:01
+[2022-10-13 14:16:05,290] {subprocess.py:92} INFO - 21:16:05  Concurrency: 2 threads (target='dev')
+[2022-10-13 14:16:05,290] {subprocess.py:92} INFO - 21:16:05
+[2022-10-13 14:16:05,299] {subprocess.py:92} INFO - 21:16:05  1 of 7 START seed file DBT_HAMS71.STG_Accounts ................................. [RUN]
+[2022-10-13 14:16:05,300] {subprocess.py:92} INFO - 21:16:05  2 of 7 START seed file DBT_HAMS71.STG_Address .................................. [RUN]
+[2022-10-13 14:16:08,892] {subprocess.py:92} INFO - 21:16:08  2 of 7 OK loaded seed file DBT_HAMS71.STG_Address .............................. [[32mCREATE 300[0m in 3.59s]
+[2022-10-13 14:16:08,894] {subprocess.py:92} INFO - 21:16:08  3 of 7 START seed file DBT_HAMS71.STG_Bank ..................................... [RUN]
+[2022-10-13 14:16:09,109] {subprocess.py:92} INFO - 21:16:09  1 of 7 OK loaded seed file DBT_HAMS71.STG_Accounts ............................. [[32mCREATE 1000[0m in 3.81s]
+[2022-10-13 14:16:09,110] {subprocess.py:92} INFO - 21:16:09  4 of 7 START seed file DBT_HAMS71.STG_Branch ................................... [RUN]
+[2022-10-13 14:16:12,139] {subprocess.py:92} INFO - 21:16:12  4 of 7 OK loaded seed file DBT_HAMS71.STG_Branch ............................... [[32mCREATE 1000[0m in 3.03s]
+[2022-10-13 14:16:12,141] {subprocess.py:92} INFO - 21:16:12  5 of 7 START seed file DBT_HAMS71.STG_City ..................................... [RUN]
+[2022-10-13 14:16:13,018] {subprocess.py:92} INFO - 21:16:13  3 of 7 OK loaded seed file DBT_HAMS71.STG_Bank ................................. [[32mCREATE 1000[0m in 4.12s]
+[2022-10-13 14:16:13,020] {subprocess.py:92} INFO - 21:16:13  6 of 7 START seed file DBT_HAMS71.STG_Contact .................................. [RUN]
+[2022-10-13 14:16:15,139] {subprocess.py:92} INFO - 21:16:15  5 of 7 OK loaded seed file DBT_HAMS71.STG_City ................................. [[32mCREATE 300[0m in 3.00s]
+[2022-10-13 14:16:15,141] {subprocess.py:92} INFO - 21:16:15  7 of 7 START seed file DBT_HAMS71.STG_Transactions ............................. [RUN]
+[2022-10-13 14:16:16,540] {subprocess.py:92} INFO - 21:16:16  6 of 7 OK loaded seed file DBT_HAMS71.STG_Contact .............................. [[32mCREATE 1000[0m in 3.52s]
+[2022-10-13 14:16:18,479] {subprocess.py:92} INFO - 21:16:18  7 of 7 OK loaded seed file DBT_HAMS71.STG_Transactions ......................... [[32mCREATE 1000[0m in 3.34s]
+[2022-10-13 14:16:18,485] {subprocess.py:92} INFO - 21:16:18
+[2022-10-13 14:16:18,486] {subprocess.py:92} INFO - 21:16:18  Finished running 7 seeds in 16.84s.
+[2022-10-13 14:16:18,517] {subprocess.py:92} INFO - 21:16:18
+[2022-10-13 14:16:18,518] {subprocess.py:92} INFO - 21:16:18  [32mCompleted successfully[0m
+[2022-10-13 14:16:18,519] {subprocess.py:92} INFO - 21:16:18
+[2022-10-13 14:16:18,520] {subprocess.py:92} INFO - 21:16:18  Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[2022-10-13 14:16:20,251] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-10-13 14:16:20,272] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=dbt_dag_bash, task_id=dbt_seed, execution_date=20221013T211553, start_date=20221013T211556, end_date=20221013T211620
+[2022-10-13 14:16:20,297] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-10-13 14:16:20,317] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

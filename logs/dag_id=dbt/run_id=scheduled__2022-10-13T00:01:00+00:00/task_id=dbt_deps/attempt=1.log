@@ -1,0 +1,27 @@
+[2022-10-13 12:15:51,432] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_deps scheduled__2022-10-13T00:01:00+00:00 [queued]>
+[2022-10-13 12:15:51,439] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_deps scheduled__2022-10-13T00:01:00+00:00 [queued]>
+[2022-10-13 12:15:51,439] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-13 12:15:51,439] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-10-13 12:15:51,439] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-13 12:15:51,453] {taskinstance.py:1377} INFO - Executing <Task(DbtDepsOperator): dbt_deps> on 2022-10-13 00:01:00+00:00
+[2022-10-13 12:15:51,457] {standard_task_runner.py:52} INFO - Started process 235339 to run task
+[2022-10-13 12:15:51,462] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dbt', 'dbt_deps', 'scheduled__2022-10-13T00:01:00+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/dbt_airflow.py', '--cfg-path', '/tmp/tmpy_w0i_nj', '--error-file', '/tmp/tmp38y7tpn5']
+[2022-10-13 12:15:51,463] {standard_task_runner.py:80} INFO - Job 62: Subtask dbt_deps
+[2022-10-13 12:15:51,534] {task_command.py:370} INFO - Running <TaskInstance: dbt.dbt_deps scheduled__2022-10-13T00:01:00+00:00 [running]> on host ubuntu
+[2022-10-13 12:15:51,586] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dbt
+AIRFLOW_CTX_TASK_ID=dbt_deps
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-13T00:01:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-13T00:01:00+00:00
+[2022-10-13 12:15:51,587] {dbt_hook.py:117} INFO - dbt deps
+[2022-10-13 12:15:51,594] {dbt_hook.py:126} INFO - Output:
+[2022-10-13 12:15:53,676] {dbt_hook.py:130} INFO - 19:15:53  Running with dbt=1.1.0
+[2022-10-13 12:15:53,686] {dbt_hook.py:130} INFO - 19:15:53  Warning: No packages were found in packages.yml
+[2022-10-13 12:15:54,984] {dbt_hook.py:132} INFO - Command exited with return code 0
+[2022-10-13 12:15:54,993] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=dbt, task_id=dbt_deps, execution_date=20221013T000100, start_date=20221013T191551, end_date=20221013T191554
+[2022-10-13 12:15:55,023] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-10-13 12:15:55,046] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,3 +1,4 @@
+import pendulum
 from airflow import DAG
 from airflow_dbt.operators.dbt_operator import (
     DbtSeedOperator,
@@ -10,10 +11,10 @@ from airflow.utils.dates import days_ago
 
 default_args = {
   'dir': '/home/ubuntu/airflow/dbt_project/',
-  'start_date': days_ago(0)
+  #'start_date': days_ago(0)
 }
 
-with DAG(dag_id='dbt', default_args=default_args, schedule_interval='@daily') as dag:
+with DAG(dag_id='dbt', default_args=default_args, schedule_interval='@daily', start_date=pendulum.datetime(2022, 10, 13, tz="UTC")) as dag:
 
   """
   The seed operator will allow us to load data file from local system to snowflake using dbt

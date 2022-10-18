@@ -1,0 +1,50 @@
+[2022-10-17 11:01:33,629] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_seed scheduled__2022-10-16T00:00:00+00:00 [queued]>
+[2022-10-17 11:01:33,634] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_seed scheduled__2022-10-16T00:00:00+00:00 [queued]>
+[2022-10-17 11:01:33,634] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-17 11:01:33,634] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-10-17 11:01:33,634] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-17 11:01:33,646] {taskinstance.py:1377} INFO - Executing <Task(DbtSeedOperator): dbt_seed> on 2022-10-16 00:00:00+00:00
+[2022-10-17 11:01:33,649] {standard_task_runner.py:52} INFO - Started process 262304 to run task
+[2022-10-17 11:01:33,653] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dbt', 'dbt_seed', 'scheduled__2022-10-16T00:00:00+00:00', '--job-id', '114', '--raw', '--subdir', 'DAGS_FOLDER/dbt_airflow.py', '--cfg-path', '/tmp/tmpw9ff9ynd', '--error-file', '/tmp/tmpn00y5q90']
+[2022-10-17 11:01:33,654] {standard_task_runner.py:80} INFO - Job 114: Subtask dbt_seed
+[2022-10-17 11:01:33,697] {task_command.py:370} INFO - Running <TaskInstance: dbt.dbt_seed scheduled__2022-10-16T00:00:00+00:00 [running]> on host ubuntu
+[2022-10-17 11:01:33,749] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dbt
+AIRFLOW_CTX_TASK_ID=dbt_seed
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-16T00:00:00+00:00
+[2022-10-17 11:01:33,750] {dbt_hook.py:117} INFO - dbt seed
+[2022-10-17 11:01:33,756] {dbt_hook.py:126} INFO - Output:
+[2022-10-17 11:01:36,876] {dbt_hook.py:130} INFO - 18:01:36  Running with dbt=1.1.0
+[2022-10-17 11:01:36,994] {dbt_hook.py:130} INFO - 18:01:36  Found 6 models, 5 tests, 6 snapshots, 0 analyses, 400 macros, 0 operations, 7 seed files, 2 sources, 0 exposures, 0 metrics
+[2022-10-17 11:01:36,997] {dbt_hook.py:130} INFO - 18:01:36
+[2022-10-17 11:01:42,352] {dbt_hook.py:130} INFO - 18:01:42  Concurrency: 2 threads (target='dev')
+[2022-10-17 11:01:42,352] {dbt_hook.py:130} INFO - 18:01:42
+[2022-10-17 11:01:42,358] {dbt_hook.py:130} INFO - 18:01:42  1 of 7 START seed file DBT_HAMS71.STG_Accounts ................................. [RUN]
+[2022-10-17 11:01:42,359] {dbt_hook.py:130} INFO - 18:01:42  2 of 7 START seed file DBT_HAMS71.STG_Address .................................. [RUN]
+[2022-10-17 11:01:50,561] {dbt_hook.py:130} INFO - 18:01:50  2 of 7 OK loaded seed file DBT_HAMS71.STG_Address .............................. [[32mINSERT 300[0m in 8.20s]
+[2022-10-17 11:01:50,562] {dbt_hook.py:130} INFO - 18:01:50  3 of 7 START seed file DBT_HAMS71.STG_Bank ..................................... [RUN]
+[2022-10-17 11:01:52,080] {dbt_hook.py:130} INFO - 18:01:52  1 of 7 OK loaded seed file DBT_HAMS71.STG_Accounts ............................. [[32mINSERT 1000[0m in 9.72s]
+[2022-10-17 11:01:52,082] {dbt_hook.py:130} INFO - 18:01:52  4 of 7 START seed file DBT_HAMS71.STG_Branch ................................... [RUN]
+[2022-10-17 11:01:55,991] {dbt_hook.py:130} INFO - 18:01:55  3 of 7 OK loaded seed file DBT_HAMS71.STG_Bank ................................. [[32mINSERT 1000[0m in 5.43s]
+[2022-10-17 11:01:55,992] {dbt_hook.py:130} INFO - 18:01:55  5 of 7 START seed file DBT_HAMS71.STG_City ..................................... [RUN]
+[2022-10-17 11:01:59,451] {dbt_hook.py:130} INFO - 18:01:59  4 of 7 OK loaded seed file DBT_HAMS71.STG_Branch ............................... [[32mINSERT 1000[0m in 7.37s]
+[2022-10-17 11:01:59,452] {dbt_hook.py:130} INFO - 18:01:59  6 of 7 START seed file DBT_HAMS71.STG_Contact .................................. [RUN]
+[2022-10-17 11:02:05,081] {dbt_hook.py:130} INFO - 18:02:05  5 of 7 OK loaded seed file DBT_HAMS71.STG_City ................................. [[32mINSERT 300[0m in 9.09s]
+[2022-10-17 11:02:05,082] {dbt_hook.py:130} INFO - 18:02:05  7 of 7 START seed file DBT_HAMS71.STG_Transactions ............................. [RUN]
+[2022-10-17 11:02:10,610] {dbt_hook.py:130} INFO - 18:02:10  7 of 7 OK loaded seed file DBT_HAMS71.STG_Transactions ......................... [[32mINSERT 1000[0m in 5.53s]
+[2022-10-17 11:02:22,102] {dbt_hook.py:130} INFO - 18:02:22  6 of 7 OK loaded seed file DBT_HAMS71.STG_Contact .............................. [[32mINSERT 1000[0m in 22.65s]
+[2022-10-17 11:02:22,106] {dbt_hook.py:130} INFO - 18:02:22
+[2022-10-17 11:02:22,106] {dbt_hook.py:130} INFO - 18:02:22  Finished running 7 seeds in 45.11s.
+[2022-10-17 11:02:22,146] {dbt_hook.py:130} INFO - 18:02:22
+[2022-10-17 11:02:22,146] {dbt_hook.py:130} INFO - 18:02:22  [32mCompleted successfully[0m
+[2022-10-17 11:02:22,147] {dbt_hook.py:130} INFO - 18:02:22
+[2022-10-17 11:02:22,147] {dbt_hook.py:130} INFO - 18:02:22  Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[2022-10-17 11:02:23,620] {dbt_hook.py:132} INFO - Command exited with return code 0
+[2022-10-17 11:02:23,634] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=dbt, task_id=dbt_seed, execution_date=20221016T000000, start_date=20221017T180133, end_date=20221017T180223
+[2022-10-17 11:02:23,659] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-10-17 11:02:23,682] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,53 @@
+[2022-10-18 00:11:57,477] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt_dag_bash.dbt_run scheduled__2022-10-17T00:00:00+00:00 [queued]>
+[2022-10-18 00:11:57,482] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt_dag_bash.dbt_run scheduled__2022-10-17T00:00:00+00:00 [queued]>
+[2022-10-18 00:11:57,482] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-18 00:11:57,482] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-10-18 00:11:57,482] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-18 00:11:57,520] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): dbt_run> on 2022-10-17 00:00:00+00:00
+[2022-10-18 00:11:57,524] {standard_task_runner.py:52} INFO - Started process 265484 to run task
+[2022-10-18 00:11:57,533] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dbt_dag_bash', 'dbt_run', 'scheduled__2022-10-17T00:00:00+00:00', '--job-id', '128', '--raw', '--subdir', 'DAGS_FOLDER/dbt_bashOperator.py', '--cfg-path', '/tmp/tmp69kn5ygq', '--error-file', '/tmp/tmp82ee15x0']
+[2022-10-18 00:11:57,533] {standard_task_runner.py:80} INFO - Job 128: Subtask dbt_run
+[2022-10-18 00:11:57,600] {task_command.py:370} INFO - Running <TaskInstance: dbt_dag_bash.dbt_run scheduled__2022-10-17T00:00:00+00:00 [running]> on host ubuntu
+[2022-10-18 00:11:57,677] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dbt_dag_bash
+AIRFLOW_CTX_TASK_ID=dbt_run
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-17T00:00:00+00:00
+[2022-10-18 00:11:57,678] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-10-18 00:11:57,679] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'cd /home/ubuntu/airflow/dbt_project/ && dbt run -m Core']
+[2022-10-18 00:11:57,696] {subprocess.py:85} INFO - Output:
+[2022-10-18 00:12:01,336] {subprocess.py:92} INFO - 07:12:01  Running with dbt=1.1.0
+[2022-10-18 00:12:01,437] {subprocess.py:92} INFO - 07:12:01  Found 6 models, 5 tests, 6 snapshots, 0 analyses, 400 macros, 0 operations, 7 seed files, 2 sources, 0 exposures, 0 metrics
+[2022-10-18 00:12:01,441] {subprocess.py:92} INFO - 07:12:01
+[2022-10-18 00:12:04,961] {subprocess.py:92} INFO - 07:12:04  Concurrency: 2 threads (target='dev')
+[2022-10-18 00:12:04,961] {subprocess.py:92} INFO - 07:12:04
+[2022-10-18 00:12:04,967] {subprocess.py:92} INFO - 07:12:04  1 of 2 START incremental model DBT_HAMS71.Core_City ............................ [RUN]
+[2022-10-18 00:12:04,981] {subprocess.py:92} INFO - 07:12:04  2 of 2 START incremental model DBT_HAMS71.Core_Transactions .................... [RUN]
+[2022-10-18 00:12:08,971] {subprocess.py:92} INFO - 07:12:08  1 of 2 ERROR creating incremental model DBT_HAMS71.Core_City ................... [[31mERROR[0m in 4.00s]
+[2022-10-18 00:12:09,282] {subprocess.py:92} INFO - 07:12:09  2 of 2 OK created incremental model DBT_HAMS71.Core_Transactions ............... [[32mSUCCESS 1[0m in 4.30s]
+[2022-10-18 00:12:09,287] {subprocess.py:92} INFO - 07:12:09
+[2022-10-18 00:12:09,287] {subprocess.py:92} INFO - 07:12:09  Finished running 2 incremental models in 7.85s.
+[2022-10-18 00:12:09,306] {subprocess.py:92} INFO - 07:12:09
+[2022-10-18 00:12:09,307] {subprocess.py:92} INFO - 07:12:09  [31mCompleted with 1 error and 0 warnings:[0m
+[2022-10-18 00:12:09,307] {subprocess.py:92} INFO - 07:12:09
+[2022-10-18 00:12:09,308] {subprocess.py:92} INFO - 07:12:09  [33mDatabase Error in model Core_City (models/Core/Core_City.sql)[0m
+[2022-10-18 00:12:09,309] {subprocess.py:92} INFO - 07:12:09    100090 (42P18): Duplicate row detected during DML action
+[2022-10-18 00:12:09,309] {subprocess.py:92} INFO - 07:12:09    Row Values: ["c16a5320fa475530d9583c34fd356ef5", "101", "31", "Mushie"]
+[2022-10-18 00:12:09,310] {subprocess.py:92} INFO - 07:12:09    compiled SQL at target/run/dbt_project/models/Core/Core_City.sql
+[2022-10-18 00:12:09,310] {subprocess.py:92} INFO - 07:12:09
+[2022-10-18 00:12:09,311] {subprocess.py:92} INFO - 07:12:09  Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[2022-10-18 00:12:11,033] {subprocess.py:96} INFO - Command exited with return code 1
+[2022-10-18 00:12:11,044] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow/operators/bash.py", line 194, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-10-18 00:12:11,047] {taskinstance.py:1395} INFO - Marking task as FAILED. dag_id=dbt_dag_bash, task_id=dbt_run, execution_date=20221017T000000, start_date=20221018T071157, end_date=20221018T071211
+[2022-10-18 00:12:11,058] {standard_task_runner.py:92} ERROR - Failed to execute job 128 for task dbt_run (Bash command failed. The command returned a non-zero exit code 1.; 265484)
+[2022-10-18 00:12:11,095] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-10-18 00:12:11,115] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

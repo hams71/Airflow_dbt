@@ -1,0 +1,40 @@
+[2022-10-13 12:19:42,279] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_run scheduled__2022-10-13T00:03:00+00:00 [queued]>
+[2022-10-13 12:19:42,284] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_run scheduled__2022-10-13T00:03:00+00:00 [queued]>
+[2022-10-13 12:19:42,284] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-13 12:19:42,284] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-10-13 12:19:42,284] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-13 12:19:42,299] {taskinstance.py:1377} INFO - Executing <Task(DbtRunOperator): dbt_run> on 2022-10-13 00:03:00+00:00
+[2022-10-13 12:19:42,302] {standard_task_runner.py:52} INFO - Started process 237043 to run task
+[2022-10-13 12:19:42,307] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dbt', 'dbt_run', 'scheduled__2022-10-13T00:03:00+00:00', '--job-id', '75', '--raw', '--subdir', 'DAGS_FOLDER/dbt_airflow.py', '--cfg-path', '/tmp/tmp7zq8i32z', '--error-file', '/tmp/tmpl2phc61f']
+[2022-10-13 12:19:42,307] {standard_task_runner.py:80} INFO - Job 75: Subtask dbt_run
+[2022-10-13 12:19:42,357] {task_command.py:370} INFO - Running <TaskInstance: dbt.dbt_run scheduled__2022-10-13T00:03:00+00:00 [running]> on host ubuntu
+[2022-10-13 12:19:42,402] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dbt
+AIRFLOW_CTX_TASK_ID=dbt_run
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-13T00:03:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-13T00:03:00+00:00
+[2022-10-13 12:19:42,403] {dbt_hook.py:117} INFO - dbt run --select Core --full-refresh
+[2022-10-13 12:19:42,410] {dbt_hook.py:126} INFO - Output:
+[2022-10-13 12:19:45,354] {dbt_hook.py:130} INFO - 19:19:45  Running with dbt=1.1.0
+[2022-10-13 12:19:45,453] {dbt_hook.py:130} INFO - 19:19:45  Found 6 models, 5 tests, 6 snapshots, 0 analyses, 400 macros, 0 operations, 7 seed files, 2 sources, 0 exposures, 0 metrics
+[2022-10-13 12:19:45,456] {dbt_hook.py:130} INFO - 19:19:45
+[2022-10-13 12:19:48,387] {dbt_hook.py:130} INFO - 19:19:48  Concurrency: 2 threads (target='dev')
+[2022-10-13 12:19:48,387] {dbt_hook.py:130} INFO - 19:19:48
+[2022-10-13 12:19:48,394] {dbt_hook.py:130} INFO - 19:19:48  1 of 2 START incremental model DBT_HAMS71.Core_City ............................ [RUN]
+[2022-10-13 12:19:48,395] {dbt_hook.py:130} INFO - 19:19:48  2 of 2 START incremental model DBT_HAMS71.Core_Transactions .................... [RUN]
+[2022-10-13 12:19:50,428] {dbt_hook.py:130} INFO - 19:19:50  1 of 2 OK created incremental model DBT_HAMS71.Core_City ....................... [[32mSUCCESS 1[0m in 2.03s]
+[2022-10-13 12:19:50,618] {dbt_hook.py:130} INFO - 19:19:50  2 of 2 OK created incremental model DBT_HAMS71.Core_Transactions ............... [[32mSUCCESS 1[0m in 2.22s]
+[2022-10-13 12:19:50,621] {dbt_hook.py:130} INFO - 19:19:50
+[2022-10-13 12:19:50,622] {dbt_hook.py:130} INFO - 19:19:50  Finished running 2 incremental models in 5.16s.
+[2022-10-13 12:19:50,637] {dbt_hook.py:130} INFO - 19:19:50
+[2022-10-13 12:19:50,638] {dbt_hook.py:130} INFO - 19:19:50  [32mCompleted successfully[0m
+[2022-10-13 12:19:50,638] {dbt_hook.py:130} INFO - 19:19:50
+[2022-10-13 12:19:50,639] {dbt_hook.py:130} INFO - 19:19:50  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[2022-10-13 12:19:52,209] {dbt_hook.py:132} INFO - Command exited with return code 0
+[2022-10-13 12:19:52,223] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=dbt, task_id=dbt_run, execution_date=20221013T000300, start_date=20221013T191942, end_date=20221013T191952
+[2022-10-13 12:19:52,282] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-10-13 12:19:52,309] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

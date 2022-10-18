@@ -1,0 +1,42 @@
+[2022-10-13 11:13:19,299] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_seed scheduled__2022-10-11T00:00:00+00:00 [queued]>
+[2022-10-13 11:13:19,308] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dbt.dbt_seed scheduled__2022-10-11T00:00:00+00:00 [queued]>
+[2022-10-13 11:13:19,309] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-13 11:13:19,309] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-10-13 11:13:19,309] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-13 11:13:19,322] {taskinstance.py:1377} INFO - Executing <Task(DbtSeedOperator): dbt_seed> on 2022-10-11 00:00:00+00:00
+[2022-10-13 11:13:19,326] {standard_task_runner.py:52} INFO - Started process 225408 to run task
+[2022-10-13 11:13:19,331] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dbt', 'dbt_seed', 'scheduled__2022-10-11T00:00:00+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/dbt_airflow.py', '--cfg-path', '/tmp/tmpfrtkb7h9', '--error-file', '/tmp/tmp1fkb_y3n']
+[2022-10-13 11:13:19,332] {standard_task_runner.py:80} INFO - Job 60: Subtask dbt_seed
+[2022-10-13 11:13:19,388] {task_command.py:370} INFO - Running <TaskInstance: dbt.dbt_seed scheduled__2022-10-11T00:00:00+00:00 [running]> on host ubuntu
+[2022-10-13 11:13:19,459] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dbt
+AIRFLOW_CTX_TASK_ID=dbt_seed
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-11T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-11T00:00:00+00:00
+[2022-10-13 11:13:19,460] {dbt_hook.py:117} INFO - dbt seed
+[2022-10-13 11:13:19,465] {dbt_hook.py:126} INFO - Output:
+[2022-10-13 11:13:22,474] {dbt_hook.py:130} INFO - 18:13:22  Running with dbt=1.1.0
+[2022-10-13 11:13:22,577] {dbt_hook.py:130} INFO - 18:13:22  Found 6 models, 5 tests, 6 snapshots, 0 analyses, 400 macros, 0 operations, 7 seed files, 2 sources, 0 exposures, 0 metrics
+[2022-10-13 11:13:22,579] {dbt_hook.py:130} INFO - 18:13:22
+[2022-10-13 11:13:25,629] {dbt_hook.py:130} INFO - 18:13:25  Error sending message, disabling tracking
+[2022-10-13 11:13:25,629] {dbt_hook.py:130} INFO - 18:13:25  Encountered an error:
+[2022-10-13 11:13:25,629] {dbt_hook.py:130} INFO - Runtime Error
+[2022-10-13 11:13:25,629] {dbt_hook.py:130} INFO -   Database error while listing schemas in database "STAGING"
+[2022-10-13 11:13:25,629] {dbt_hook.py:130} INFO -   Database Error
+[2022-10-13 11:13:25,629] {dbt_hook.py:130} INFO -     250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+[2022-10-13 11:13:25,877] {dbt_hook.py:132} INFO - Command exited with return code 2
+[2022-10-13 11:13:25,892] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/operators/dbt_operator.py", line 135, in execute
+    self.create_hook().run_cli('seed')
+  File "/home/ubuntu/airflow/airflow_env/lib/python3.8/site-packages/airflow_dbt/hooks/dbt_hook.py", line 138, in run_cli
+    raise AirflowException("dbt command failed")
+airflow.exceptions.AirflowException: dbt command failed
+[2022-10-13 11:13:25,901] {taskinstance.py:1395} INFO - Marking task as FAILED. dag_id=dbt, task_id=dbt_seed, execution_date=20221011T000000, start_date=20221013T181319, end_date=20221013T181325
+[2022-10-13 11:13:25,932] {standard_task_runner.py:92} ERROR - Failed to execute job 60 for task dbt_seed (dbt command failed; 225408)
+[2022-10-13 11:13:25,956] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-10-13 11:13:25,982] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
